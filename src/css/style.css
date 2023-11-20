@@ -1,0 +1,231 @@
+:root {
+    --main-color: #332E3C;
+    --primary-color: #797484;
+    --secondary-color: #FFF;
+    --third-color: #D2462E;
+    --fourth-color: #8A63C3;
+    --fifth-color: #3277CA;
+    --sixth-color: #4DDBC9;
+    --seventh-color: #FFD3C7;
+    --eighth-color: #D9D9D9;
+    --ninth-color: #EFEFEF;
+    --tenth-color: #999;
+    --eleventh-color: #999999;
+    --font-family-Figtree: 'Figtree', sans-serif;
+    --font-family-IBM: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+/* ====TEXT DESKTOP==== */
+
+.heading {
+    color: var(--main-color);
+}
+
+.heading-menu {
+    color: var(--primary-color);
+}
+
+.heading-Figtree-semiBold {
+    font-family: var(--font-family-Figtree);
+    font-weight: 600;
+}
+
+.heading-Figtree-regular {
+    font-family: var(--font-family-Figtree);
+    font-weight: 400;
+}
+
+.heading-IBM-semiBold {
+    font-family: var(--font-family-IBM);
+    font-weight: 600;
+}
+
+.heading-xxl {
+    font-size: 4.8rem;
+}
+
+.heading-xl {
+    font-size: 3.6rem;
+}
+
+.heading-lg {
+    font-size: 2.4rem;
+}
+
+.heading-md {
+    font-size: 1.9rem;
+}
+
+.heading-xsm {
+    font-size: 1.6rem;
+}
+
+.heading-sm {
+    font-size: 1.4rem;
+}
+
+.line-height-xxlg {
+    line-height: 30px;
+}
+
+.line-height-xlg {
+    line-height: 28px;
+}
+
+.line-height-lg {
+    line-height: 24px;
+}
+
+.line-height-xmd {
+    line-height: 23px;
+}
+
+.line-height-md {
+    line-height: 22px;
+}
+
+.line-height-xsm {
+    line-height: 21px;
+}
+
+.line-height-sm {
+    line-height: 20px;
+}
+
+.txt-decoration {
+    text-decoration: underline;
+}
+
+
+/* ====BORDER==== */
+
+.b-solid-pg {
+    border: 1px solid #999
+}
+
+.b-radius-pg {
+    border-radius: 25px;
+}
+
+
+/* ====BUTTON==== */
+
+.button {
+    border: none;
+    outline: none;
+}
+
+.button--primary {
+    padding: 24px;
+    background-color: var(--eighth-color);
+}
+
+.button--secondary {
+    padding: 10px 59px;
+    background-color: var(--fourth-color);
+}
+
+.button--third {
+    padding: 10px 50px;
+    background-color: var(--ninth-color);
+}
+
+.button--fouth {
+    padding: 10px 46px;
+    background-color: var(--main-color);
+}
+
+.bagde {
+    padding: 4px 8px;
+    background-color: var(--fifth-color);
+}
+
+
+/* ====SECTION HEADER==== */
+
+.section--header {
+    background-color: var(--seventh-color);
+}
+
+.grid--item-rate {
+    column-gap: 1rem;
+}
+
+
+/* ====SECTION MENU==== */
+
+.grid--menu {
+    width: 100%;
+}
+
+.container--header-menu {
+    row-gap: 27px;
+}
+
+.form__search {
+    padding: 12px 12px;
+    max-width: 33rem;
+    border: 1px solid var(--tenth-color);
+    background-color: var(--secondary-color);
+}
+
+.input-search {
+    width: 23.5rem;
+    max-width: 100%;
+    color: var(--eleventh-color);
+}
+
+.grid--item-button {
+    column-gap: 1.5rem;
+}
+
+.button--general {
+    background-color: var(--eighth-color);
+    padding: 3px 7px;
+}
+
+.grid--item-menu {
+    max-width: 95.2rem;
+}
+
+.nav__list-menu {
+    column-gap: 2rem;
+}
+
+.nav__items-menu {
+    column-gap: 0.6rem;
+}
+
+
+/* ====SECTION BANNER==== */
+
+.section--banner-collection {
+    background-image: url("../images/banner/banner-collection.jpg")
+}
+
+.grid--content {
+    padding-block: 29rem 6rem;
+}
+
+.button--shop-now {
+    color: var(--secondary-color);
+    background: rgba(0, 0, 0, 0.60);
+    padding: 2.4rem 7.5rem 2.9rem 7.5rem;
+    row-gap: 1rem;
+}

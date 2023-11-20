@@ -1,0 +1,363 @@
+/* =======HELPER======== */
+
+
+/* ====FLEXBOX CONTAINER==== 
+   ====DISPLAY==== */
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.d-none {
+    display: none;
+}
+
+
+/* ====FLEX-DIRECTION==== */
+
+.f-direction-col {
+    flex-direction: column;
+}
+
+.f-direction-row {
+    flex-direction: row;
+}
+
+
+/* ====FLEX-WRAP==== */
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* ====JUSTIFY-CONTENT==== */
+
+.jc-start {
+    justify-content: start;
+}
+
+.jc-end {
+    justify-content: end;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.jc-space-evenly {
+    justify-content: space-evenly;
+}
+
+
+/* ====ALIGN-ITEM===== */
+
+.alt-start {
+    align-items: flex-start;
+}
+
+.alt-center {
+    align-items: center;
+}
+
+.alt-end {
+    align-items: flex-end;
+}
+
+
+/* ====ALIGN-CONTENT===== */
+
+.alc-start {
+    align-content: flex-start;
+}
+
+.alc-end {
+    align-content: flex-end;
+}
+
+.alc-center {
+    align-content: center;
+}
+
+.alc-space-between {
+    align-content: space-between;
+}
+
+.alc-space-around {
+    align-content: space-around;
+}
+
+
+/* ====FLEXBOX ITEM==== 
+   ====ALIGN-SELF==== */
+
+.als-start {
+    align-self: self-start;
+}
+
+.als-end {
+    align-self: self-end;
+}
+
+.als-end {
+    align-self: center;
+}
+
+
+/* ====GRID==== 
+   ===JUSTIFY-ITEM===*/
+
+.jfi-start {
+    justify-items: start;
+}
+
+.jfi-end {
+    justify-items: end;
+}
+
+.jfi-center {
+    justify-items: center;
+}
+
+
+/* ====POSITION==== */
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+
+/* ====BACKGROUND-IMAGES==== */
+
+.bg-images {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-none {
+    background: none;
+}
+
+
+/* ====OVER-FLOW==== */
+
+.o-hidden {
+    overflow: hidden;
+}
+
+.o-visible {
+    overflow: visible;
+}
+
+.o-scroll {
+    overflow: scroll;
+}
+
+.o-auto {
+    overflow: auto;
+}
+
+
+/* ====CURSOR:POINTER==== */
+
+.c-pointer {
+    cursor: pointer;
+}
+
+
+/* ====LIST-STYLE:NONE==== */
+
+.listStyle-none {
+    list-style: none;
+}
+
+
+/* ====BORDER:NONE==== */
+
+.b-none {
+    border: none;
+}
+
+
+/* ====OUTLINE:NONE==== */
+
+.ol-none {
+    outline: none;
+}
+
+
+/* ====RESPONSIVE MOBILE==== 
+   =====Bootstrap Breakpoints=====*/
+
+
+/* ====breakpoint from 0==== */
+
+@media (min-width:0) {
+    .d-none-xxs {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint extra small==== */
+
+@media (max-width:576px) {
+    .d-none-xs {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint small==== */
+
+@media (min-width:576px) {
+    .d-none-sm {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint medium==== */
+
+@media (min-width:768px) {
+    .d-none-md {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint large==== */
+
+
+/* 
+@media (min-width:992px) {
+    .d-none-lg {
+        display: none;
+    }
+} */
+
+
+/* ====breakpoint extra large==== */
+
+@media (min-width:1200px) {
+    .d-none-xl {
+        display: none;
+    }
+    .d-block-xl {
+        display: block;
+    }
+    .d-flex-xl {
+        display: flex;
+    }
+    .alt-center-xl {
+        align-items: center;
+    }
+    .f-direction-col-xl {
+        flex-direction: column;
+    }
+}
+
+
+/* ====breakpoint extra extra large==== */
+
+@media (min-width:1440px) {
+    .d-none-xxl {
+        display: none;
+    }
+}
+
+
+/* ====RESPONSIVE DESKTOP==== 
+   =====Breakpoints=====*/
+
+
+/* ====breakpoint extra small==== */
+
+@media (max-width:414px) {
+    .d-none.xs-desktop {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint small==== */
+
+@media (max-width:576px) {
+    .d-none.sm-desktop {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint medium==== */
+
+@media (max-width:768px) {
+    .d-none-md-desktop {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint large==== */
+
+@media (max-width:992px) {
+    .d-none-lg-desktop {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint extra large==== */
+
+@media (max-width:1200px) {
+    .d-none-xl-desktop {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint extra extra large==== */
+
+@media (max-width:1440px) {
+    .d-none-xxl-desktop {
+        display: none;
+    }
+}
+
+
+/* ====breakpoint extra extra extra large==== */
+
+@media (min-width:1440px) {
+    .d-none-xxxl-desktop {
+        display: none;
+    }
+}
