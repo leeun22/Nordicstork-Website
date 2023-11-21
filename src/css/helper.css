@@ -155,16 +155,25 @@
 }
 
 
-/* ====BACKGROUND-IMAGES==== */
+/* ====TEXT-ALIGN==== */
 
-.bg-images {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.t-align-start {
+    text-align: start;
 }
 
-.bg-none {
-    background: none;
+.t-align-center {
+    text-align: center;
+}
+
+.t-align-end {
+    text-align: end;
+}
+
+
+/* ====MAX-WIDTH: MAX-CONTENT==== */
+
+.mw-max-content {
+    max-width: max-content;
 }
 
 
@@ -212,6 +221,52 @@
 
 .ol-none {
     outline: none;
+}
+
+
+/* ====BACKGROUND-IMAGES==== 
+   ====For Container Parent===*/
+
+.bg-images {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-none {
+    background: none;
+}
+
+
+/* ====OBJECT-FIT==== 
+   ===For Item Children===*/
+
+.obj-fill {
+    object-fit: fill;
+}
+
+.obj-cover {
+    object-fit: cover;
+}
+
+.obj-contain {
+    object-fit: contain;
+}
+
+.obj-inherit {
+    object-fit: inherit;
+}
+
+
+/* ====OBJECT-POSITION==== 
+   ===For Item Children===*/
+
+.obj-position {
+    object-position: center;
+}
+
+.obj-position-50 {
+    object-position: 50% 50%;
 }
 
 

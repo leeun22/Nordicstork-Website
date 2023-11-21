@@ -10,9 +10,10 @@
     --eighth-color: #D9D9D9;
     --ninth-color: #EFEFEF;
     --tenth-color: #999;
-    --eleventh-color: #999999;
-    --font-family-Figtree: 'Figtree', sans-serif;
-    --font-family-IBM: 'IBM Plex Sans', sans-serif;
+    --eleventh-color: #CCC;
+    --twelfth-color: #F9F7F1;
+    --font-family-primary: 'Figtree', sans-serif;
+    --font-family-secondary: 'IBM Plex Sans', sans-serif;
 }
 
 * {
@@ -41,18 +42,18 @@ a {
     color: var(--primary-color);
 }
 
-.heading-Figtree-semiBold {
-    font-family: var(--font-family-Figtree);
+.heading-primary-semiBold {
+    font-family: var(--font-family-primary);
     font-weight: 600;
 }
 
-.heading-Figtree-regular {
-    font-family: var(--font-family-Figtree);
+.heading-primary-regular {
+    font-family: var(--font-family-primary);
     font-weight: 400;
 }
 
-.heading-IBM-semiBold {
-    font-family: var(--font-family-IBM);
+.heading-secondary-Bold {
+    font-family: var(--font-family-secondary);
     font-weight: 600;
 }
 
@@ -86,10 +87,6 @@ a {
 
 .line-height-xlg {
     line-height: 28px;
-}
-
-.line-height-lg {
-    line-height: 24px;
 }
 
 .line-height-xmd {
@@ -129,15 +126,21 @@ a {
 .button {
     border: none;
     outline: none;
+    background: inherit;
+}
+
+.button-radius {
+    border-radius: 25px;
 }
 
 .button--primary {
-    padding: 24px;
-    background-color: var(--eighth-color);
+    padding: 3px 7px;
+    color: var(--main-color);
+    /* background-color: var(--eighth-color); */
 }
 
 .button--secondary {
-    padding: 10px 59px;
+    padding: 1rem 5.9rem;
     background-color: var(--fourth-color);
 }
 
@@ -159,7 +162,7 @@ a {
 
 /* ====SECTION HEADER==== */
 
-.section--header {
+.section--topbar {
     background-color: var(--seventh-color);
 }
 
@@ -169,6 +172,10 @@ a {
 
 
 /* ====SECTION MENU==== */
+
+.section--menu {
+    border-bottom: 1px solid var(--eleventh-color);
+}
 
 .grid--menu {
     width: 100%;
@@ -188,20 +195,11 @@ a {
 .input-search {
     width: 23.5rem;
     max-width: 100%;
-    color: var(--eleventh-color);
+    color: var(--tenth-color);
 }
 
 .grid--item-button {
     column-gap: 1.5rem;
-}
-
-.button--general {
-    background-color: var(--eighth-color);
-    padding: 3px 7px;
-}
-
-.grid--item-menu {
-    max-width: 95.2rem;
 }
 
 .nav__list-menu {
@@ -212,14 +210,37 @@ a {
     column-gap: 0.6rem;
 }
 
+.nav__menu-group:hover .nav__menu--dropdown {
+    display: block;
+    transition: 0.4s ease;
+}
+
+.nav__menu-group:hover .icon-dropdown-menu {
+    transform: rotate(180deg);
+    transition: 0.3s ease;
+}
+
+.nav__menu--dropdown {
+    min-width: 15%;
+    z-index: 1;
+    background-color: var(--secondary-color);
+    padding: 2rem 1rem 2rem 2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-top: 1px dashed #bfbfbf33;
+}
+
+.nav__list-menu-dropdown {
+    row-gap: 15px;
+}
+
 
 /* ====SECTION BANNER==== */
 
-.section--banner-collection {
-    background-image: url("../images/banner/banner-collection.jpg")
+.container--banner-collection {
+    background-image: url("../images/banner/banner-collection.jpg");
 }
 
-.grid--content {
+.grid--banner-content {
     padding-block: 29rem 6rem;
 }
 
@@ -228,4 +249,77 @@ a {
     background: rgba(0, 0, 0, 0.60);
     padding: 2.4rem 7.5rem 2.9rem 7.5rem;
     row-gap: 1rem;
+}
+
+
+/* ====SECTION CATEGORIES AGE==== */
+
+.grid--group-categories {
+    margin-top: 63px;
+    column-gap: 44px;
+    row-gap: 32px;
+}
+
+.grid--item-categories-age {
+    row-gap: 21px;
+}
+
+.title-per-age {
+    row-gap: 2px;
+}
+
+
+/* ====SECTION BANNER MAIN==== */
+
+.section--main-background {
+    background-color: var(--twelfth-color);
+}
+
+.container--banner-main {
+    padding-block: 58px 60px;
+}
+
+.grid--content-banner {
+    width: 100%;
+    max-width: 69rem;
+}
+
+.content-banner {
+    line-height: 30px;
+    padding-block: 34px 55px;
+}
+
+.txt-1 {
+    margin-bottom: 30px;
+}
+
+.btn-help-me {
+    line-height: 30px;
+    color: var(--secondary-color);
+}
+
+
+/* ===SECTION PRODUCT MAIN HAVE BACKGROUND=== */
+
+.grid--product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+
+.grid--item-product {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    row-gap: 10px;
+}
+
+.box-images {
+    max-width: 100%;
+    height: 30rem;
+}
+
+.image-product {
+    width: 100%;
+    height: 100%;
 }

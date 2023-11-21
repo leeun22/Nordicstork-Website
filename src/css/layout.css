@@ -1,18 +1,37 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .container {
     width: 100%;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.container--large {
     max-width: 1250px;
-    padding-inline: 15px;
-    margin: 0 auto;
 }
 
-.section--banner-collection {
-    width: 100%;
+.container--medium {
     max-width: 1220px;
-    margin: 0 auto;
-    padding-inline: 15px;
 }
 
-.container--header-rate {
+.container--small {
+    max-width: 1150px;
+}
+
+.section--primary {
+    margin-block: 80px;
+}
+
+.section--secondary {
+    padding-block: 80px;
+}
+
+.container--topbar-rate {
     padding-block: 14px;
 }
 
@@ -20,9 +39,12 @@
     padding-block: 20px;
 }
 
-@media (max-width:576px) {
-    .container--header-rate {
-        padding-inline: 10px;
+
+/* ====RESPONSIVE LAYOUT==== */
+
+@media (max-width:350px) {
+    .grid--group-categories {
+        justify-content: center;
     }
 }
 
@@ -30,8 +52,56 @@
     .heading-xxl-mobile {
         font-size: 3.2rem;
     }
+}
+
+@media (max-width:576px) {
+    .container--topbar-rate {
+        padding-inline: 10px;
+    }
+    .grid--item-button {
+        column-gap: 0.3rem;
+    }
+    .section--main {
+        margin-block: 40px 42px;
+    }
     .heading-xl-mobile {
         font-size: 2.4rem;
+    }
+    .heading-lg-mobile {
+        font-size: 1.8rem;
+    }
+    .heading-md-mobile {
+        font-size: 1.6rem;
+    }
+    .line-height-lg {
+        line-height: 24px;
+    }
+    .grid--group-categories {
+        column-gap: 20px;
+    }
+    .grid--item-categories-age {
+        row-gap: 10px;
+    }
+    .title-per-age {
+        row-gap: 1px;
+    }
+}
+
+@media (min-width:576px) {
+    .box-images {
+        height: 40rem;
+    }
+}
+
+@media (min-width:850px) and (max-width:1200px) {
+    .box-images {
+        aspect-ratio: 1;
+    }
+}
+
+@media (min-width:992px) {
+    .grid--item-product {
+        flex: 1 0 235px;
     }
 }
 
@@ -42,6 +112,15 @@
     }
     .container--header-menu {
         padding-block: 25px;
+    }
+    .grid--item-product {
+        flex: 1 0 535px;
+    }
+    .grid--product {
+        gap: 50px;
+    }
+    .grid--item-product {
+        row-gap: 20px;
     }
 }
 
@@ -54,6 +133,13 @@
     }
     .grid--item-search {
         width: 100%;
+    }
+}
+
+@media (max-width:1062px) {
+    .container--banner-main {
+        justify-content: center;
+        row-gap: 32px;
     }
 }
 
@@ -79,4 +165,9 @@
 
 .heading-sm-mobile {
     font-size: 1.4rem;
-} */
+} 
+
+.line-height-lg {
+    line-height: 24px;
+}
+    */
