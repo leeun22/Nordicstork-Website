@@ -302,14 +302,10 @@ a {
 /* ===SECTION PRODUCT MAIN HAVE BACKGROUND=== */
 
 .grid--product {
-    display: flex;
-    flex-wrap: wrap;
     gap: 30px 20px;
 }
 
 .grid--item-product {
-    display: flex;
-    flex-direction: column;
     flex: 1 0 300px;
     row-gap: 10px;
 }
@@ -317,9 +313,4 @@ a {
 .box-images {
     max-width: 100%;
     height: 30rem;
-}
-
-.image-product {
-    width: 100%;
-    height: 100%;
 }
