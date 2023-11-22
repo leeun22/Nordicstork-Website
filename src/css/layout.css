@@ -17,6 +17,10 @@ img {
     max-width: 1220px;
 }
 
+.container--footer {
+    max-width: 1200px;
+}
+
 .container--small {
     max-width: 1150px;
 }
@@ -27,6 +31,25 @@ img {
 
 .section--secondary {
     padding-block: 80px;
+}
+
+.section--third {
+    padding-block: 40px 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid--third {
+    margin-top: 32px;
+    column-gap: 20px;
+    row-gap: 32px;
+}
+
+.grid--item-third {
+    row-gap: 10px;
 }
 
 .container--topbar-rate {
@@ -56,9 +79,6 @@ img {
     .container--topbar-rate {
         padding-inline: 10px;
     }
-    .grid--item-button {
-        column-gap: 0.3rem;
-    }
     .section--main {
         margin-block: 40px 42px;
     }
@@ -83,11 +103,71 @@ img {
     .title-per-age {
         row-gap: 1px;
     }
+    .img-item-third {
+        max-width: 155px;
+    }
+    /* Chia các item, mỗi 1 row có 2 column với độ rộng = nhau */
+    .grid--5-item .grid--item {
+        width: calc(100%/2)
+    }
+    .grid--item-about-us {
+        padding-block: 24px 30px;
+    }
+    .grid--item-get-in-touch {
+        padding-block: 30px 32px;
+    }
+    .title-social {
+        line-height: 30px;
+    }
 }
 
 @media (min-width:576px) {
+    .grid--item-button {
+        column-gap: 2.4rem;
+    }
     .box-images {
         height: 40rem;
+    }
+    .section--tip-advice {
+        margin-block: 80px 100px;
+    }
+    .grid--content-tips {
+        margin-bottom: 32px;
+    }
+    .heading-xl-desktop {
+        font-size: 3.6rem;
+    }
+    .heading-md-desktop {
+        font-size: 1.9rem;
+    }
+    .button--view-all {
+        padding: 10px 50px;
+    }
+    .grid--button {
+        margin-top: 72px;
+    }
+    .grid--content-tips {
+        margin-bottom: 64px;
+    }
+    .section--third {
+        padding-block: 60px 62px;
+    }
+    .grid--third {
+        margin-top: 59px;
+        column-gap: 34px;
+        row-gap: 56px;
+    }
+    .grid--item-third {
+        row-gap: 25px;
+    }
+    /* Chia các item, mỗi 1 row có 3 column với độ rộng = nhau */
+    .grid--5-item .grid--item {
+        width: calc(100%/3)
+    }
+    .grid__footer-medium {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        padding-block: 50px 70px;
     }
 }
 
@@ -101,9 +181,26 @@ img {
     .grid--item-product {
         flex: 1 0 235px;
     }
+    /* Chia các item, mỗi 1 row có 4 column với độ rộng = nhau */
+    .grid--5-item .grid--item {
+        width: calc(100%/4)
+    }
+    .grid__footer-bottom {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+    .grid--item-payment-card {
+        justify-content: end;
+    }
+    .item-coppyright {
+        text-align: start;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .grid--item-button {
+        column-gap: 1.5rem;
+    }
     .form__search {
         border: none;
         padding: unset;
@@ -115,19 +212,62 @@ img {
         flex: 1 0 535px;
     }
     .grid--product {
-        gap: 50px;
+        gap: 60px 50px;
     }
     .grid--item-product {
         row-gap: 20px;
+    }
+    .line-height-xxlg-mb {
+        line-height: 30px;
+    }
+    /* Chia các item, mỗi 1 row có 5 column với độ rộng = nhau */
+    .grid--5-item .grid--item {
+        width: calc(100%/5)
+    }
+    .grid__footer-top {
+        padding-block: 37px 48px;
+    }
+    .grid--item-top-primary {
+        column-gap: 20px;
+    }
+    .item-top-primary-content {
+        row-gap: 12px;
+    }
+    .button--submit-email {
+        padding: 1rem 4.65rem;
+        font-size: 1.9rem;
+    }
+    .input--email {
+        width: 38rem;
+        padding: 1rem 0 1rem 1.5rem;
+        line-height: 2.5rem;
+    }
+    .form__sign-up {
+        column-gap: 2rem;
+    }
+    .grid__footer-medium {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid--article {
+        row-gap: 20px;
+    }
+    .item-contact {
+        margin-top: 6px;
+    }
+    .item-content {
+        line-height: 22px;
+    }
+    .nav__list-footer {
+        line-height: 30px;
+    }
+    .line-height-sm {
+        line-height: 20px;
     }
 }
 
 @media (min-width:0) and (max-width:1200px) {
     .form__search {
         max-width: 100%;
-    }
-    .grid--item-button {
-        column-gap: 2.4rem;
     }
     .grid--item-search {
         width: 100%;
