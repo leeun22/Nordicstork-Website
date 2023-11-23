@@ -170,6 +170,17 @@
 }
 
 
+/* ====TEXT DECORATION==== */
+
+.txt-decoration {
+    text-decoration: underline;
+}
+
+.txt-line-through {
+    text-decoration: line-through;
+}
+
+
 /* ====MAX-WIDTH: MAX-CONTENT==== */
 
 .mw-max-content {

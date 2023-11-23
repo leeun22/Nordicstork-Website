@@ -25,6 +25,12 @@ img {
     max-width: 1150px;
 }
 
+.container--card-slider {
+    /* border: 1px solid red; */
+    max-width: 1090px;
+    padding-inline: 30px;
+}
+
 .section--primary {
     margin-block: 80px;
 }
@@ -119,6 +125,29 @@ img {
     .title-social {
         line-height: 30px;
     }
+    .container--card-slider {
+        padding-inline: inherit;
+        padding-left: 15px;
+        padding-right: 13.5rem;
+    }
+    .button--submit-email {
+        width: 100%;
+    }
+    .section--main-background {
+        background-color: inherit;
+    }
+    .title-new-arrivals {
+        background-color: var(--twelfth-color);
+    }
+    .section--card-slider-primary {
+        background-color: var(--twelfth-color);
+    }
+    .title-best-seller {
+        background-color: var(--fifteenth-color);
+    }
+    .section--card-slider-secondary {
+        background-color: var(--fifteenth-color);
+    }
 }
 
 @media (min-width:576px) {
@@ -168,6 +197,34 @@ img {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
         padding-block: 50px 70px;
+    }
+    .name-product {
+        line-height: 30px;
+    }
+    .price-product {
+        line-height: inherit;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        color: #332E3C;
+    }
+    .title-new-arrivals {
+        margin-top: 80px;
+        background-color: inherit;
+        padding-block: inherit;
+    }
+    .section--card-slider {
+        padding-block: 64px 80px;
+        background-color: inherit;
+    }
+    .form__sign-up {
+        width: 50%;
+    }
+    .button--submit-email {
+        width: 100%;
     }
 }
 
@@ -226,10 +283,16 @@ img {
         width: calc(100%/5)
     }
     .grid__footer-top {
+        flex-direction: row;
+        align-items: center;
         padding-block: 37px 48px;
     }
     .grid--item-top-primary {
+        justify-content: flex-start;
         column-gap: 20px;
+    }
+    .grid--item-top-secondary {
+        width: 56%;
     }
     .item-top-primary-content {
         row-gap: 12px;
@@ -244,7 +307,12 @@ img {
         line-height: 2.5rem;
     }
     .form__sign-up {
+        justify-content: flex-end;
         column-gap: 2rem;
+        width: 100%;
+    }
+    .button--submit-email {
+        width: unset;
     }
     .grid__footer-medium {
         grid-template-columns: repeat(4, 1fr);
