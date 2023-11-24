@@ -323,13 +323,20 @@
 
 /* ====breakpoint large==== */
 
-
-/* 
 @media (min-width:992px) {
-    .d-none-lg {
-        display: none;
+    .alt-start-lg {
+        align-items: start;
     }
-} */
+    .jfi-legacy-lg {
+        justify-items: legacy
+    }
+    .jc-end-lg {
+        justify-content: end;
+    }
+    .t-align-start-lg {
+        text-align: start;
+    }
+}
 
 
 /* ====breakpoint extra large==== */
@@ -349,6 +356,15 @@
     }
     .f-direction-col-xl {
         flex-direction: column;
+    }
+    .f-direction-row-xl {
+        flex-direction: row;
+    }
+    .jc-center-xl {
+        justify-content: flex-start;
+    }
+    .jc-end-xl {
+        justify-content: flex-end;
     }
 }
 

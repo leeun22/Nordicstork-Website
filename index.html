@@ -82,44 +82,65 @@
                     <a href="#" class="button button--primary">
                         <img src="./src/images/svg/cart.svg" alt="cart">
                     </a>
-                    <a href="#" class="button button--primary">
+                    <!-- <a href="#" class="button button--primary">
                         <img src="./src/images/svg/menu.svg" alt="menu">
-                    </a>
+                    </a> -->
 
                     <!-- Menu Mobile -->
-                    <!-- <div class="button button--primary">
-                        <div class="menu">
-                            <button type="button" class="" onclick="openNav()"> 
-                                <img src="./src/images/svg/menu.svg" alt="menu">
-                            </button>
+                    <div class="item-menu-mb">
+                        <button type="button" class="button" onclick="openNav()"> 
+                            <img src="./src/images/svg/menu.svg" alt="menu">
+                        </button>
 
-                            <div id="mySidenav" class="sidenav tablet-menu-block">
-                                <button type="button" class="closebtn d-none p-absolute b-none" id="btnCloseNav" onclick="closeNav()">&times;</button>
+                        <div id="mySidenav" class="sidenav tablet-menu-block">
+                            <button type="button" class="button closebtn d-none p-absolute b-none" id="btnCloseNav" onclick="closeNav()">&times;</button>
 
-                                <ul class="nav__list-menu d-flex o-hidden">
-                                    <li class="nav__items-menu">
-                                        <a href="#" class="nav__link-menu d-block primary-text">Home</a>
-                                    </li>
-                                    <li class="nav__items-menu">
-                                        <a href="#" class="nav__link-menu d-block primary-text">Category</a>
-                                    </li>
-                                    <li class="nav__items-menu">
-                                        <a href="#" class="nav__link-menu d-block primary-text">About</a>
-                                    </li>
-                                    <li class="nav__items-menu">
-                                        <a href="#" class="nav__link-menu d-block primary-text">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul id="accordion-menu" class="nav__list-menu-mb d-flex o-hidden heading-md line-height-md heading-primary-regular">
+                                <!-- <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Trang chủ</a>
+                                </li> -->
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Trending</a>
+                                    <!-- <ul class="menu-drop-down">
+                                        <li class="item-menu-drop-down"><a href="#">Item Menu</a></li>
+                                        <li class="item-menu-drop-down"><a href="#">Item Menu</a></li>
+                                        <li class="item-menu-drop-down"><a href="#">Item Menu</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Shop by age</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Gifts</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Play and learn</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Baby care</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Eat</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Nursery</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">SEN</a>
+                                </li>
+                                <li class="nav__items-menu-mb">
+                                    <a href="#" class="nav__link-menu-mb d-block primary-text">Brands</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
 
                 <div class="grid--menu d-flex jc-space-between alt-center">
                     <div class="grid--item-search">
                         <form class="form__search d-flex f-wrap jc-space-between alt-center" action="#">
-                            <input type="search" placeholder="Search for products or brands" name="search" class="button input-search heading-primary-regular heading-xsm d-none-xl">
+                            <input type="search" placeholder="Search for products or brands" name="search" class="button input-search heading-primary-regular heading-md d-none-xl">
                             <button type="submit" class="button button--primary">
                                     <img src="./src/images/svg/search.svg" alt="search">
                             </button>
@@ -127,217 +148,214 @@
                     </div>
 
                     <div class="grid--item-menu d-none-xxs d-block-xl">
-                        <nav class="">
-                            <ul class="nav__list-menu d-flex o-hidden listStyle-none">
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <ul class="nav__list-menu d-flex o-hidden listStyle-none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Trending</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </div>
+
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Shop by age</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Shop by age</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Gifts</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Gifts</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Play and learn</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Play and learn</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Baby care</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Baby care</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Eat</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Eat</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Nursery</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Nursery</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">SEN</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
 
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">SEN</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <li class="nav__menu-group d-inline-block">
+                                <div class="nav__items-menu d-flex alt-center">
+                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Brands</a>
+                                    <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                         </svg>
-                                    </div>
+                                </div>
 
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                                <li class="nav__menu-group d-inline-block">
-                                    <div class="nav__items-menu d-flex alt-center">
-                                        <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Brands</a>
-                                        <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                    </div>
-
-                                    <div class="nav__menu--dropdown d-none p-absolute">
-                                        <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                            <li class="nav__items-menu-dropdown">
-                                                <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-xsm d-block">Trending</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </nav>
+                                <div class="nav__menu--dropdown d-none p-absolute">
+                                    <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                        <li class="nav__items-menu-dropdown">
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- Icon onclick or href execute one action on desktop -->
@@ -364,8 +382,8 @@
             <div class="container container--medium container--banner-collection bg-images">
                 <div class="grid--banner-content d-flex jc-center">
                     <a href="#" class="button button--shop-now d-grid alt-center jfi-center">
-                        <span class="heading-primary-semiBold heading-xxl heading-xxl-mobile t-align-center">Beach summer fun</span>
-                        <span class="heading-primary-regular heading-lg">Shop now</span>
+                        <span class="heading-primary-semiBold heading-xxl heading-xxl-desktop t-align-center">Beach summer fun</span>
+                        <span class="heading-primary-regular heading-xl">Shop now</span>
                     </a>
                 </div>
             </div>
@@ -375,10 +393,10 @@
         <section class="section--primary">
             <div class="container container--small">
                 <div class="t-align-center">
-                    <a href="#" class="title heading heading-primary-semiBold heading-xl heading-xl-mobile">Shop by age</a>
+                    <a href="#" class="title heading heading-primary-semiBold heading-xl-desktop heading-xl">Shop by age</a>
                 </div>
 
-                <div class="grid--group-categories d-grid alt-center jfi-center">
+                <div class="grid--group-categories d-grid alt-center jfi-center gap-cl-10px">
                     <div class="grid--item grid--item-categories-age d-flex f-direction-col">
                         <a href="#">
                             <!-- <label for="">0-6</label> -->
@@ -394,10 +412,10 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-mobile">
+                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
                                 0-6
                             </span>
-                            <span class="months heading heading-primary-regular heading-md heading-md-mobile">
+                            <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
                                 months
                             </span>
                         </a>
@@ -428,10 +446,10 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-mobile">
+                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
                                 6-12
                             </span>
-                            <span class="months heading heading-primary-regular heading-md heading-md-mobile">
+                            <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
                                 months
                             </span>
                         </a>
@@ -462,10 +480,10 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-mobile">
+                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
                                 1-2
                             </span>
-                            <span class="months heading heading-primary-regular heading-md heading-md-mobile">
+                            <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
                                 months
                             </span>
                         </a>
@@ -508,10 +526,10 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-mobile">
+                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
                                 2-3
                             </span>
-                            <span class="months heading heading-primary-regular heading-md heading-md-mobile">
+                            <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
                                 months
                             </span>
                         </a>
@@ -542,10 +560,10 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-mobile">
+                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
                                 3-4
                             </span>
-                            <span class="months heading heading-primary-regular heading-md heading-md-mobile">
+                            <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
                                 months
                             </span>
                         </a>
@@ -587,10 +605,10 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-mobile">
+                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
                                 5+
                             </span>
-                            <span class="months heading heading-primary-regular heading-md heading-md-mobile">
+                            <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
                                 months
                             </span>
                         </a>
@@ -603,15 +621,15 @@
         <section class="section--main-background">
             <div class="container container--small container--banner-main d-flex f-wrap jc-space-between">
                 <div class="grid--content-banner">
-                    <h2 class="title-content-banner heading-primary-semiBold heading heading-xl heading-xl-mobile">Gift finder</h2>
+                    <h2 class="title-content-banner heading-primary-semiBold heading heading-xl-desktop heading-xl">Gift finder</h2>
 
-                    <div class="content-banner heading heading-primary-regular heading-md heading-md-mobile">
+                    <div class="content-banner heading heading-primary-regular heading-md heading-xlg-desktop">
                         <p class="txt-1">When it comes to finding the perfect gift for your loved ones, we've got you covered!</p>
                         <p class="txt-2">Our gift finding tool is so easy-to-use, and if that wasn't enough, we also offer a gift wrapping service.</p>
                     </div>
 
                     <a href="#" class="button button-radius button--secondary d-block mw-max-content">
-                        <span class="heading-primary-semiBold heading-md btn-help-me heading-md-mobile">Help me find a gift</span>
+                        <span class="heading-primary-semiBold heading-md btn-help-me heading-xlg-desktop">Help me find a gift</span>
                     </a>
                 </div>
 
@@ -624,7 +642,7 @@
         <!-- SECTION CARD SLIDER NEW ARRIVALS -->
         <!-- Leave the JS File at the end  -->
         <div class="title-new-arrivals p-block-title-slider heading heading-xl-desktop">
-            <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-lg t-align-center">New Arrivals</a>
+            <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-xl t-align-center">New Arrivals</a>
         </div>
 
         <div class="section--card-slider-primary section--third heading">
@@ -636,74 +654,74 @@
                 <div class="swiper-wrapper grid--card">
                     <!-- Slides Item-->
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/new-arrivals/tender-leaf-toy.png" alt="Threadbear Fred Bear Knitted Toy">
-                            <span class="bagde bagde-primary heading-primary-semiBold heading-sm">New in</span>
+                            <span class="bagde bagde-primary p-absolute heading-primary-semiBold heading-sm">New in</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm txt-decoration heading-md-desktop">Threadbear Fred Bear Knitted Toy</a>
-                            <span class="price-product heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop">£13.00</span>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md txt-decoration heading-xlg-desktop">Threadbear Fred Bear Knitted Toy</a>
+                            <span class="price-product heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop">£13.00</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/new-arrivals/11.jpg" alt="Little Dutch Baby Play Gym">
-                            <span class="bagde bagde-primary heading-primary-semiBold heading-sm">New in</span>
+                            <span class="bagde bagde-primary p-absolute heading-primary-semiBold heading-sm">New in</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm txt-decoration heading-md-desktop">Little Dutch Baby Play Gym - Flowers & Butterflies</a>
-                            <span class="price-product heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop">£48.50</span>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md txt-decoration heading-xlg-desktop">Little Dutch Baby Play Gym - Flowers & Butterflies</a>
+                            <span class="price-product heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop">£48.50</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/new-arrivals/teddy-bronw.png" alt="Teddy Brown">
-                            <span class="bagde bagde-primary heading-primary-semiBold heading-sm">New in</span>
+                            <span class="bagde bagde-primary p-absolute heading-primary-semiBold heading-sm">New in</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm txt-decoration heading-md-desktop">Teddy Brown</a>
-                            <span class="price-product heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop">£65.00</span>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md txt-decoration heading-xlg-desktop">Teddy Brown</a>
+                            <span class="price-product heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop">£65.00</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/new-arrivals/11.png" alt="Etta Loves Playmat - Plant">
-                            <span class="bagde bagde-primary heading-primary-semiBold heading-sm">New in</span>
+                            <span class="bagde bagde-primary p-absolute heading-primary-semiBold heading-sm">New in</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm txt-decoration heading-md-desktop">Etta Loves Playmat - Plant</a>
-                            <span class="price-product heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop">£75.00</span>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md txt-decoration heading-xlg-desktop">Etta Loves Playmat - Plant</a>
+                            <span class="price-product heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop">£75.00</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/new-arrivals/7.png" alt="Etta Loves Muslins">
-                            <span class="bagde bagde-primary heading-primary-semiBold heading-sm">New in</span>
+                            <span class="bagde bagde-primary p-absolute heading-primary-semiBold heading-sm">New in</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm txt-decoration heading-md-desktop">Etta Loves Muslins - Plants - 3 Pack</a>
-                            <span class="price-product heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop">£27.00</span>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md txt-decoration heading-xlg-desktop">Etta Loves Muslins - Plants - 3 Pack</a>
+                            <span class="price-product heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop">£27.00</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/new-arrivals/13.png" alt="Black and White Sensory Hanging Squares Toy">
-                            <span class="bagde bagde-primary heading-primary-semiBold heading-sm">New in</span>
+                            <span class="bagde bagde-primary p-absolute heading-primary-semiBold heading-sm">New in</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm txt-decoration heading-md-desktop">Black and White Sensory Hanging Squares Toy</a>
-                            <span class="price-product heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop">£22.00</span>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md txt-decoration heading-xlg-desktop">Black and White Sensory Hanging Squares Toy</a>
+                            <span class="price-product heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop">£22.00</span>
                         </div>
                     </div>
                 </div>
@@ -726,7 +744,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Bottle-Cleaning Supplies
                             </a>
                         </figcaption>
@@ -738,7 +756,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Bathtime Supplies
                             </a>
                         </figcaption>
@@ -750,7 +768,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Cicastela Moisture Recovery Cream
                             </a>
                         </figcaption>
@@ -762,7 +780,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Rocking Chair
                             </a>
                         </figcaption>
@@ -773,7 +791,7 @@
 
         <!-- SECTION CARD SLIDER BEST SELLER-->
         <div class="title-best-seller p-block-title-slider heading heading-xl-desktop">
-            <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-lg t-align-center">Bestsellers</a>
+            <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-xl t-align-center">Bestsellers</a>
         </div>
 
         <div class="section--card-slider-secondary section--third heading">
@@ -785,97 +803,97 @@
                 <div class="swiper-wrapper grid--card">
                     <!-- Slides Item-->
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/best-sellers/1.jpg" alt="Bigjigs Toys Heritage Playset Rose Cottage">
-                            <span class="bagde bagde-secondary heading-primary-semiBold heading-sm">Sale</span>
+                            <span class="bagde bagde-secondary p-absolute heading-primary-semiBold heading-sm">Sale</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm heading-md-desktop">Bigjigs Toys Heritage Playset Rose Cottage</a>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md heading-xlg-desktop">Bigjigs Toys Heritage Playset Rose Cottage</a>
 
                             <div class="price-product">
-                                <span class="standard-price heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop txt-line-through">£154.99</span>
-                                <span class="discount-price heading-primary-regular heading-xsm line-height-xsm heading-md-desktop">£147.99</span>
+                                <span class="standard-price heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop txt-line-through">£154.99</span>
+                                <span class="discount-price heading-primary-regular heading-md line-height-xsm heading-xlg-desktop">£147.99</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/best-sellers/2.jpg" alt="Bigjigs Toys Heritage Playset Blossom Cottage">
-                            <span class="bagde bagde-secondary heading-primary-semiBold heading-sm">Sale</span>
+                            <span class="bagde bagde-secondary p-absolute heading-primary-semiBold heading-sm">Sale</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm heading-md-desktop">Bigjigs Toys Heritage Playset Blossom Cottage</a>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md eading-xlg-desktop">Bigjigs Toys Heritage Playset Blossom Cottage</a>
 
                             <div class="price-product">
-                                <span class="standard-price heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop txt-line-through">£99.99</span>
-                                <span class="discount-price heading-primary-regular heading-xsm line-height-xsm heading-md-desktop">£79.99</span>
+                                <span class="standard-price heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop txt-line-through">£99.99</span>
+                                <span class="discount-price heading-primary-regular heading-md line-height-xsm heading-xlg-desktop">£79.99</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/best-sellers/3.jpg" alt="Bigjigs Toys Wooden City Fire Engine Toy">
-                            <span class="bagde bagde-secondary heading-primary-semiBold heading-sm">Sale</span>
+                            <span class="bagde bagde-secondary p-absolute heading-primary-semiBold heading-sm">Sale</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm heading-md-desktop">Bigjigs Toys Wooden City Fire Engine Toy</a>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md heading-xlg-desktop">Bigjigs Toys Wooden City Fire Engine Toy</a>
 
                             <div class="price-product">
-                                <span class="standard-price heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop txt-line-through">£24.99</span>
-                                <span class="discount-price heading-primary-regular heading-xsm line-height-xsm heading-md-desktop">£20.99</span>
+                                <span class="standard-price heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop txt-line-through">£24.99</span>
+                                <span class="discount-price heading-primary-regular heading-md line-height-xsm heading-xlg-desktop">£20.99</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/best-sellers/8.jpg" alt="Foxtail Villa + Furniture in Pink">
-                            <span class="bagde bagde-secondary heading-primary-semiBold heading-sm">Sale</span>
+                            <span class="bagde bagde-secondary p-absolute heading-primary-semiBold heading-sm">Sale</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm heading-md-desktop">Foxtail Villa + Furniture in Pink</a>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md heading-xlg-desktop">Foxtail Villa + Furniture in Pink</a>
 
                             <div class="price-product">
-                                <span class="standard-price heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop txt-line-through">£170.00</span>
-                                <span class="discount-price heading-primary-regular heading-xsm line-height-xsm heading-md-desktop">£150.00</span>
+                                <span class="standard-price heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop txt-line-through">£170.00</span>
+                                <span class="discount-price heading-primary-regular heading-md line-height-xsm heading-xlg-desktop">£150.00</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/best-sellers/blosso-flower.png" alt="Tender Leaf Toys Blossom Flower Pot">
-                            <span class="bagde bagde-secondary heading-primary-semiBold heading-sm">Sale</span>
+                            <span class="bagde bagde-secondary p-absolute heading-primary-semiBold heading-sm">Sale</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm heading-md-desktop">Tender Leaf Toys Blossom Flower Pot</a>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md heading-xlg-desktop">Tender Leaf Toys Blossom Flower Pot</a>
 
                             <div class="price-product">
-                                <span class="standard-price heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop txt-line-through">£22.00</span>
-                                <span class="discount-price heading-primary-regular heading-xsm line-height-xsm heading-md-desktop">£17.00</span>
+                                <span class="standard-price heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop txt-line-through">£22.00</span>
+                                <span class="discount-price heading-primary-regular heading-md line-height-xsm heading-xlg-desktop">£17.00</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide items-card">
-                        <div class="images-product">
+                        <div class="images-product p-relative">
                             <img src="./src/images/best-sellers/clocks-toy.png" alt="Tender Leaf Toys Clock & Citrus Fractions Bundle">
-                            <span class="bagde bagde-secondary heading-primary-semiBold heading-sm">Sale</span>
+                            <span class="bagde bagde-secondary p-absolute heading-sm">Sale</span>
                         </div>
 
                         <div class="title-product t-align-center d-flex f-direction-col">
-                            <a href="#" class="name-product heading heading-primary-regular heading-xsm heading-md-desktop">Tender Leaf Toys Clock & Citrus Fractions Bundle</a>
+                            <a href="#" class="name-product heading heading-primary-regular heading-md heading-xlg-desktop">Tender Leaf Toys Clock & Citrus Fractions Bundle</a>
 
                             <div class="price-product">
-                                <span class="standard-price heading-primary-semiBold heading-xsm line-height-xsm heading-md-desktop txt-line-through">£43.00</span>
-                                <span class="discount-price heading-primary-regular heading-xsm line-height-xsm heading-md-desktop">£41.00</span>
+                                <span class="standard-price heading-primary-semiBold heading-md line-height-xsm heading-xlg-desktop txt-line-through">£43.00</span>
+                                <span class="discount-price heading-primary-regular heading-md line-height-xsm heading-xlg-desktop">£41.00</span>
                             </div>
                         </div>
                     </div>
@@ -893,17 +911,17 @@
         <div class="section--third section--categories-bg">
             <div class="container container--small">
                 <div class="t-align-center">
-                    <a href="#" class="heading heading-primary-semiBold heading-lg heading-xl-desktop">Our popular categories</a>
+                    <a href="#" class="heading heading-primary-semiBold heading-xl heading-xl-desktop">Our popular categories</a>
                 </div>
 
-                <div class="grid--categories grid--third d-grid alt-center jfi-center">
+                <div class="grid--categories grid--third d-grid alt-center jfi-center gap-cl-10px">
                     <div class="grid--item grid--item-third d-flex f-direction-col grid--5-item">
                         <a href="#">
                             <img class="img-item-third" src="./src/images/our-popular-categories/arts-crafts 1.svg" alt="Arts and crafts">
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Arts and crafts
                             </span>
                         </a>
@@ -915,7 +933,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Baby essentials
                             </span>
                         </a>
@@ -927,7 +945,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Baby toys
                             </span>
                         </a>
@@ -939,7 +957,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Bath toys
                             </span>
                         </a>
@@ -951,7 +969,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Bestsellers
                             </span>
                         </a>
@@ -963,7 +981,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Dolls and doll houses
                             </span>
                         </a>
@@ -975,7 +993,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Educational toys
                             </span>
                         </a>
@@ -987,7 +1005,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Food time
                             </span>
                         </a>
@@ -999,7 +1017,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Games and puzzles
                             </span>
                         </a>
@@ -1011,7 +1029,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Gifts
                             </span>
                         </a>
@@ -1023,7 +1041,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Musical instruments
                             </span>
                         </a>
@@ -1035,7 +1053,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Nursery decor
                             </span>
                         </a>
@@ -1047,7 +1065,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Play kitchens
                             </span>
                         </a>
@@ -1059,7 +1077,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Role play and dress-up
                             </span>
                         </a>
@@ -1071,7 +1089,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="heading heading-primary-regular heading-xsm">
+                            <span class="heading heading-primary-regular heading-md">
                                 Wooden toys
                             </span>
                         </a>
@@ -1084,7 +1102,7 @@
         <div class="section--tip-advice">
             <div class="container container--small">
                 <div class="grid--content-tips t-align-center">
-                    <a href="#" class="tips-and-advice heading heading-primary-semiBold heading-lg heading-xl-desktop">Tips and advice</a>
+                    <a href="#" class="tips-and-advice heading heading-primary-semiBold heading-xl heading-xl-desktop">Tips and advice</a>
                 </div>
 
                 <div class="grid--product d-flex f-wrap o-hidden">
@@ -1094,7 +1112,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Making mealtime enjoyable for toddlers
                             </a>
                         </figcaption>
@@ -1106,7 +1124,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Tummy time essentials: what you should know
                             </a>
                         </figcaption>
@@ -1118,7 +1136,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 The benefits of soft toys for babies
                             </a>
                         </figcaption>
@@ -1130,7 +1148,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-md-mobile line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
                                 Taking baby to the beach? Safety tips and must haves
                             </a>
                         </figcaption>
@@ -1139,7 +1157,7 @@
 
 
                 <div class="d-flex jc-center grid--button">
-                    <a href="#" class="button button--view-all b-radius-pg button--third heading heading-primary-semiBold heading-xsm t-align-center heading-md-desktop">
+                    <a href="#" class="button button--view-all b-radius-pg button--third heading heading-primary-semiBold heading-md t-align-center heading-xlg-desktop">
                         View all of our tips and advice
                     </a>
                 </div>
@@ -1153,28 +1171,28 @@
     <footer>
         <div class="section--footer-top heading">
             <div class="container container--footer container--footer-top">
-                <div class="grid__footer-top d-flex f-direction-col f-wrap jc-space-between">
-                    <div class="grid--item-top-primary d-flex alt-center">
+                <div class="grid__footer-top d-flex f-direction-col f-wrap jc-space-between f-direction-row-xl alt-center-xl">
+                    <div class="grid--item-top-primary d-flex alt-center jc-center-xl">
                         <div class="item-top-primary-img">
                             <img class="img-stay-in-know" src="./src/images/footer/Stay-in-know-1.svg" alt="Stay in know">
                         </div>
                         <div class="item-top-primary-content d-flex f-direction-col">
                             <h2 class="heading heading-primary-semiBold line-height-sm">Stay in the know</h2>
-                            <p class="heading heading-primary-regular heading-xsm txt-sign-up">Sign up to hear about our latest offers, news and discounts.</p>
+                            <p class="heading heading-primary-regular heading-md txt-sign-up">Sign up to hear about our latest offers, news and discounts.</p>
                         </div>
                     </div>
 
                     <div class="grid--item-top-secondary">
-                        <form class="form__sign-up d-flex f-wrap" action="">
-                            <input type="email" class="input--email heading-primary-regular heading-xsm" placeholder="Enter your email address">
-                            <button type="submit" class="button button-radius button--fouth c-pointer heading-primary-semiBold heading-xsm line-height-xxlg button--submit-email ">Sign up now</button>
+                        <form class="form__sign-up d-flex f-wrap jc-end-xl" action="">
+                            <input type="email" class="input--email heading-primary-regular heading-md" placeholder="Enter your email address">
+                            <button type="submit" class="button button-radius button--fouth c-pointer heading-primary-semiBold heading-md line-height-xxlg button--submit-email ">Sign up now</button>
                         </form>
                     </div>
                 </div>
 
                 <div class="grid__footer-medium d-grid jc-space-between alt-start">
                     <article class="grid--item-about-us grid--article d-flex f-direction-col">
-                        <h2 class="item-heading heading-primary-semiBold heading-xsm heading-xsm">About us</h2>
+                        <h2 class="item-heading heading-primary-semiBold heading-md heading-md">About us</h2>
                         <div class="item-content d-flex f-wrap f-direction-col heading-primary-regular heading-sm ">
                             <span>This text area can be used to explain your brand's vision and mission to your customers.</span>
                             <a href="#" class="txt-decoration">Read more</a>
@@ -1182,7 +1200,7 @@
                     </article>
 
                     <article class="grid--item-help-information grid--article d-flex f-wrap f-direction-col">
-                        <h2 class="item-heading heading-primary-semiBold heading-xsm ">Help and information</h2>
+                        <h2 class="item-heading heading-primary-semiBold heading-md ">Help and information</h2>
                         <nav class="nav__item-content">
                             <ul class="nav__list-footer listStyle-none heading-primary-regular heading-sm">
                                 <li class="nav__item-footer">
@@ -1211,7 +1229,7 @@
                     </article>
 
                     <article class="grid--item-get-in-touch grid--article d-flex f-wrap f-direction-col heading-primary-regular heading-sm">
-                        <h2 class="item-heading heading-primary-semiBold heading-xsm">Get in touch</h2>
+                        <h2 class="item-heading heading-primary-semiBold heading-md">Get in touch</h2>
                         <p class="item-subheading line-height-sm">We are available online Monday to Friday between 9am-5pm.</p>
                         <div class="item-contact d-flex f-direction-col">
                             <div class="contact-group d-flex alt-center">
@@ -1249,12 +1267,12 @@
 
         <div class="section--footer-bottom">
             <div class="container container--footer container--footer-bottom">
-                <div class="grid__footer-bottom d-grid jfi-center">
+                <div class="grid__footer-bottom d-grid jfi-center alt-start-lg jfi-legacy-lg">
                     <!-- <div class="grid--item-heading"> -->
-                    <p class="item-coppyright t-align-center heading heading-primary-regular heading-sm line-height-sm">© 2023 Nordicstork Ltd is a company registered in England & Wales Company Number: 13111688 VAT Number: GB123456789</p>
+                    <p class="item-coppyright t-align-center heading heading-primary-regular heading-sm line-height-sm t-align-start-lg">© 2023 Nordicstork Ltd is a company registered in England & Wales Company Number: 13111688 VAT Number: GB123456789</p>
                     <!-- </div> -->
 
-                    <div class="grid--item-payment-card d-flex f-wrap alt-center jc-center">
+                    <div class="grid--item-payment-card d-flex f-wrap alt-center jc-center jc-end-lg">
                         <a href="#" class="item-payment-card d-block">
                             <img src="./src/images/footer/visa.svg" alt="Visa">
                         </a>

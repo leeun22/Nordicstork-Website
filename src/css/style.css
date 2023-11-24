@@ -64,22 +64,18 @@ a {
 }
 
 .heading-xxl {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
 }
 
 .heading-xl {
-    font-size: 3.6rem;
-}
-
-.heading-lg {
     font-size: 2.4rem;
 }
 
-.heading-md {
-    font-size: 1.9rem;
+.heading-lg {
+    font-size: 1.8rem;
 }
 
-.heading-xsm {
+.heading-md {
     font-size: 1.6rem;
 }
 
@@ -112,7 +108,6 @@ a {
 }
 
 .bagde {
-    position: absolute;
     color: var(--secondary-color);
     padding: 4px 8px;
     left: 0;
@@ -155,7 +150,6 @@ a {
 .button--primary {
     padding: 3px 7px;
     color: var(--main-color);
-    /* background-color: var(--eighth-color); */
 }
 
 .button--secondary {
@@ -163,9 +157,17 @@ a {
     background-color: var(--fourth-color);
 }
 
+.button--secondary:hover {
+    background-color: #623e96;
+}
+
 .button--third {
     padding: 13px 50px;
     background-color: var(--ninth-color);
+}
+
+.button--third:hover {
+    background-color: #c2c2c2;
 }
 
 .button--fouth {
@@ -228,6 +230,10 @@ a {
     column-gap: 0.6rem;
 }
 
+.nav__link-menu:hover {
+    color: var(--main-color);
+}
+
 .nav__menu-group:hover .nav__menu--dropdown {
     display: block;
     transition: 0.4s ease;
@@ -248,43 +254,34 @@ a {
 }
 
 .nav__list-menu-dropdown {
-    row-gap: 15px;
+    row-gap: 20px;
 }
 
 
 /* Menu Mobile */
 
-
-/* Menu */
-
-
-/* .tablet-menu-block {
+.tablet-menu-block {
     display: none;
 }
 
-.bar-menu {
-    background-color: unset;
-}
-
-.nav__list-menu {
+.nav__list-menu-mb {
     gap: 48px;
     list-style: none;
 }
 
-.nav__link-menu {
+.nav__link-menu-mb {
     font-family: var(--secondary-font);
     color: var(--main-color);
     transition: var(--primary-transition);
 }
 
 .closebtn {
-    color: var(--second-color);
+    color: var(--secondary-color);
     top: 10px;
     right: 20px;
     font-size: 35px;
     margin-left: 50px;
-    background-color: unset;
-} */
+}
 
 
 /* ====SECTION BANNER==== */
@@ -309,7 +306,7 @@ a {
 
 .grid--group-categories {
     margin-top: 63px;
-    column-gap: 20px;
+    column-gap: 10px;
     row-gap: 32px;
 }
 
@@ -440,7 +437,10 @@ a {
 
 .button--submit-email {
     color: var(--secondary-color);
-    /* width: 100%; */
+}
+
+.button--submit-email:hover {
+    background-color: #3c2e56;
 }
 
 .grid__footer-top {
@@ -526,10 +526,6 @@ a {
 
 
 /* ====SECTION CARD SLIDER NEW ARRIVALS==== */
-
-.images-product {
-    position: relative;
-}
 
 .name-product {
     line-height: 23px;

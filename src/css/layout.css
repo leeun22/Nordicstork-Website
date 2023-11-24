@@ -26,7 +26,6 @@ img {
 }
 
 .container--card-slider {
-    /* border: 1px solid red; */
     max-width: 1090px;
     padding-inline: 30px;
 }
@@ -41,11 +40,6 @@ img {
 
 .section--third {
     padding-block: 40px 40px;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .grid--third {
@@ -69,18 +63,15 @@ img {
 
 /* ====RESPONSIVE LAYOUT==== */
 
-@media (max-width:360px) {
-    .grid--group-categories {
-        column-gap: 10px;
-    }
-    .grid--categories {
-        column-gap: 10px;
+@media (min-width:360px) {
+    .gap-cl-10px {
+        column-gap: 20px;
     }
 }
 
-@media (max-width:768px) {
-    .heading-xxl-mobile {
-        font-size: 3.2rem;
+@media (min-width:768px) {
+    .heading-xxl-desktop {
+        font-size: 4.8rem;
     }
 }
 
@@ -93,15 +84,6 @@ img {
     }
     .section--main {
         margin-block: 40px 42px;
-    }
-    .heading-xl-mobile {
-        font-size: 2.4rem;
-    }
-    .heading-lg-mobile {
-        font-size: 1.8rem;
-    }
-    .heading-md-mobile {
-        font-size: 1.6rem;
     }
     .line-height-lg {
         line-height: 24px;
@@ -182,8 +164,14 @@ img {
     .heading-xl-desktop {
         font-size: 3.6rem;
     }
-    .heading-md-desktop {
+    .heading-lg-desktop {
+        font-size: 2.4rem;
+    }
+    .heading-xlg-desktop {
         font-size: 1.9rem;
+    }
+    .heading-md-desktop {
+        font-size: 1.6rem;
     }
     .button--view-all {
         padding: 10px 50px;
@@ -204,10 +192,6 @@ img {
     }
     .grid--item-third {
         row-gap: 25px;
-    }
-    /* Chia các item, mỗi 1 row có 3 column với độ rộng = nhau */
-    .grid--5-item .grid--item {
-        width: calc(100%/3)
     }
     .grid__footer-medium {
         grid-template-columns: repeat(2, 1fr);
@@ -258,24 +242,12 @@ img {
     .grid--item-product {
         flex: 1 0 235px;
     }
-    /* Chia các item, mỗi 1 row có 4 column với độ rộng = nhau */
-    .grid--5-item .grid--item {
-        width: calc(100%/4)
-    }
     .grid__footer-bottom {
         grid-template-columns: repeat(2, 1fr);
-        align-items: start;
-        justify-items: legacy;
-    }
-    .grid--item-payment-card {
-        justify-content: end;
-    }
-    .item-coppyright {
-        text-align: start;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .grid--item-button {
         column-gap: 1.5rem;
     }
@@ -305,17 +277,10 @@ img {
         grid-template-columns: repeat(5, 1fr);
         column-gap: 34px;
     }
-    /* Chia các item, mỗi 1 row có 5 column với độ rộng = nhau */
-    .grid--5-item .grid--item {
-        width: calc(100%/5)
-    }
     .grid__footer-top {
-        flex-direction: row;
-        align-items: center;
         padding-block: 37px 48px;
     }
     .grid--item-top-primary {
-        justify-content: flex-start;
         column-gap: 20px;
     }
     .grid--item-top-secondary {
@@ -334,7 +299,6 @@ img {
         line-height: 2.5rem;
     }
     .form__sign-up {
-        justify-content: flex-end;
         column-gap: 2rem;
         width: 100%;
     }
@@ -368,6 +332,38 @@ img {
     .grid--item-search {
         width: 100%;
     }
+    /* Menu mobile responsive */
+    .tablet-menu-block {
+        display: block;
+    }
+    .sidenav {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.60);
+        width: 100%;
+        max-width: 414px;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 20px 0 20px 040px;
+        text-align: left;
+        transition: 0.6s ease;
+        transform: translateX(-100%);
+        overflow: scroll;
+    }
+    .sidenav.active {
+        transform: translateX(0);
+    }
+    .nav__list-menu-mb {
+        flex-direction: column;
+    }
+    .closebtn {
+        display: block;
+        background: none;
+    }
+    .nav__link-menu-mb {
+        color: #FFF;
+    }
 }
 
 @media (max-width:1062px) {
@@ -376,32 +372,3 @@ img {
         row-gap: 32px;
     }
 }
-
-
-/* ====TEXT MOBILE==== */
-
-
-/* .heading-xxl-mobile {
-    font-size: 3.2rem;
-}
-
-.heading-xl-mobile {
-    font-size: 2.4rem;
-}
-
-.heading-lg-mobile {
-    font-size: 1.8rem;
-}
-
-.heading-md-mobile {
-    font-size: 1.6rem;
-}
-
-.heading-sm-mobile {
-    font-size: 1.4rem;
-} 
-
-.line-height-lg {
-    line-height: 24px;
-}
-*/

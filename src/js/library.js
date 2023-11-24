@@ -9,6 +9,39 @@
      headerNav.classList.remove('active');
  }
 
+ //  ====DROP DOWN MENU MOBILE====
+
+ //  $(function() {
+ //      var Accordion = function(el, multiple) {
+ //          this.el = el || {};
+ //          this.multiple = multiple || false;
+
+ //          var links = this.el.find('.nav__link-menu-mb');
+
+ //          links.on('click', {
+ //              el: this.el,
+ //              multiple: this.multiple
+ //          }, this.dropdown)
+ //      }
+
+ //      Accordion.prototype.dropdown = function(e) {
+ //          var $el = e.data.el;
+ //          $this = $(this),
+ //              $next = $this.next();
+
+ //          $next.slideToggle();
+ //          $this.parent().toggleClass('open');
+
+ //          if (!e.data.multiple) {
+ //              $el.find('.menu-drop-down').not($next).slideUp().parent().removeClass('open');
+ //          };
+ //      }
+
+ //      var accordion = new Accordion($('#accordion-menu'), false);
+ //  });
+
+
+ //  ====SLIDER====
  /* < script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js" > < /script> */
 
  /* initializing swiper slider */
