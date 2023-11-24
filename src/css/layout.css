@@ -30,15 +30,7 @@ img {
     padding-inline: 30px;
 }
 
-.section--primary {
-    margin-block: 80px;
-}
-
-.section--secondary {
-    padding-block: 80px;
-}
-
-.section--third {
+.section--third-padding {
     padding-block: 40px 40px;
 }
 
@@ -76,10 +68,29 @@ img {
 }
 
 @media (max-width:576px) {
+    /* ====CHANGE POSITION ELEMENTS==== */
+    .section--third {
+        order: 5;
+    }
+    .section--fourth {
+        order: 3;
+    }
+    .section--fifth {
+        order: 4;
+    }
+    .section--sixth {
+        order: 7
+    }
+    .section--seventh {
+        order: 6
+    }
+    .section--eighth {
+        order: 8;
+    }
     .container--topbar-rate {
         padding-inline: 10px;
     }
-    .section--secondary {
+    .section--secondary-padding {
         background-color: inherit;
     }
     .section--main {
@@ -121,32 +132,32 @@ img {
     .button--submit-email {
         width: 100%;
     }
-    .title-new-arrivals {
+    .section--background-primary {
         background-color: var(--twelfth-color);
     }
-    .section--card-slider-primary {
-        background-color: var(--twelfth-color);
-    }
-    .title-best-seller {
+    .section--background-secondary {
         background-color: var(--fifteenth-color);
     }
-    .section--card-slider-secondary {
-        background-color: var(--fifteenth-color);
+    .section--categoris-sm {
+        background-color: var(--secondary-color);
     }
 }
 
 @media (min-width:576px) {
-    .section--main-background {
+    .section--background-third {
         background-color: var(--twelfth-color);
+    }
+    .section-padding-4-8 {
+        padding-block: 80px;
+    }
+    .container--banner-main {
+        padding-block: 58px 60px;
     }
     .grid--item-button {
         column-gap: 2.4rem;
     }
     .box-images {
         height: 40rem;
-    }
-    .section--categories-bg {
-        background-color: var(--twelfth-color);
     }
     .grid--group-categories {
         grid-template-columns: repeat(3, 1fr);
@@ -157,9 +168,6 @@ img {
     }
     .section--tip-advice {
         margin-block: 80px 100px;
-    }
-    .grid--content-tips {
-        margin-bottom: 32px;
     }
     .heading-xl-desktop {
         font-size: 3.6rem;
@@ -179,11 +187,8 @@ img {
     .grid--button {
         margin-top: 72px;
     }
-    .grid--content-tips {
-        margin-bottom: 64px;
-    }
-    .section--third {
-        padding-block: 60px 62px;
+    .section--margin-32-64 {
+        margin-top: 64px;
     }
     .grid--third {
         margin-top: 59px;
@@ -212,12 +217,6 @@ img {
         color: #332E3C;
     }
     .title-new-arrivals {
-        margin-top: 80px;
-        background-color: inherit;
-        padding-block: inherit;
-    }
-    .section--card-slider {
-        padding-block: 64px 80px;
         background-color: inherit;
     }
     .form__sign-up {

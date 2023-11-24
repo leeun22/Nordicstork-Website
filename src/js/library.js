@@ -97,8 +97,9 @@
  var swiper = new Swiper(".mySwiper-topBar", {
      // Show 4 card trong 1 slide
      // Có khoảng cách giữa các card là 15px
-     slidesPerView: 1,
+     //  slidesPerView: 1,
      spaceBetween: 30,
+     centeredSlides: true,
      grabCursor: true,
      // Set chuyển động cho slide mỗi 2500s 1 lần next
      // Khi di chuột vào (pauseOnMouse) thì dừng slide
@@ -111,12 +112,8 @@
      slidesPerGroup: 1,
      loop: true,
      loopFillGroupWithBlank: true,
-     pagination: {
-         el: ".swiper-pagination",
-         clickable: true,
-     },
      navigation: {
-         prevEl: ".swiper-button-prev",
-         nextEl: ".swiper-button-next",
+         prevEl: ".button--prev",
+         nextEl: ".button--next",
      },
  });
