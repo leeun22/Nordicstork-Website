@@ -69,9 +69,12 @@ img {
 
 /* ====RESPONSIVE LAYOUT==== */
 
-@media (max-width:350px) {
+@media (max-width:360px) {
     .grid--group-categories {
-        justify-content: center;
+        column-gap: 10px;
+    }
+    .grid--categories {
+        column-gap: 10px;
     }
 }
 
@@ -84,6 +87,9 @@ img {
 @media (max-width:576px) {
     .container--topbar-rate {
         padding-inline: 10px;
+    }
+    .section--secondary {
+        background-color: inherit;
     }
     .section--main {
         margin-block: 40px 42px;
@@ -101,7 +107,7 @@ img {
         line-height: 24px;
     }
     .grid--group-categories {
-        column-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
     }
     .grid--item-categories-age {
         row-gap: 10px;
@@ -133,9 +139,6 @@ img {
     .button--submit-email {
         width: 100%;
     }
-    .section--main-background {
-        background-color: inherit;
-    }
     .title-new-arrivals {
         background-color: var(--twelfth-color);
     }
@@ -151,11 +154,24 @@ img {
 }
 
 @media (min-width:576px) {
+    .section--main-background {
+        background-color: var(--twelfth-color);
+    }
     .grid--item-button {
         column-gap: 2.4rem;
     }
     .box-images {
         height: 40rem;
+    }
+    .section--categories-bg {
+        background-color: var(--twelfth-color);
+    }
+    .grid--group-categories {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    .grid--categories {
+        grid-template-columns: repeat(4, 1fr);
     }
     .section--tip-advice {
         margin-block: 80px 100px;
@@ -235,6 +251,10 @@ img {
 }
 
 @media (min-width:992px) {
+    .grid--group-categories {
+        column-gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+    }
     .grid--item-product {
         flex: 1 0 235px;
     }
@@ -277,6 +297,13 @@ img {
     }
     .line-height-xxlg-mb {
         line-height: 30px;
+    }
+    .grid--group-categories {
+        column-gap: 44px;
+    }
+    .grid--categories {
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 34px;
     }
     /* Chia các item, mỗi 1 row có 5 column với độ rộng = nhau */
     .grid--5-item .grid--item {

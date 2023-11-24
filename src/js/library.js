@@ -1,3 +1,14 @@
+ // ====NAV BAR MENU MOBILE====
+ function openNav() {
+     const headerNav = document.getElementById("mySidenav");
+     headerNav.classList.add('active');
+ }
+
+ function closeNav() {
+     const headerNav = document.getElementById("mySidenav");
+     headerNav.classList.remove('active');
+ }
+
  /* < script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js" > < /script> */
 
  /* initializing swiper slider */

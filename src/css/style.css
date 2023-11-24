@@ -16,6 +16,7 @@
     --fourteenth-color: #BBB;
     --fifteenth-color: #E9EEF7;
     --sixteenth-color: #D4351C;
+    --seventeenth-color: #F6F3FF;
     --font-family-primary: 'Figtree', sans-serif;
     --font-family-secondary: 'IBM Plex Sans', sans-serif;
     --swiper-navigation-size: 22px;
@@ -251,6 +252,41 @@ a {
 }
 
 
+/* Menu Mobile */
+
+
+/* Menu */
+
+
+/* .tablet-menu-block {
+    display: none;
+}
+
+.bar-menu {
+    background-color: unset;
+}
+
+.nav__list-menu {
+    gap: 48px;
+    list-style: none;
+}
+
+.nav__link-menu {
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+    transition: var(--primary-transition);
+}
+
+.closebtn {
+    color: var(--second-color);
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    margin-left: 50px;
+    background-color: unset;
+} */
+
+
 /* ====SECTION BANNER==== */
 
 .container--banner-collection {
@@ -273,7 +309,7 @@ a {
 
 .grid--group-categories {
     margin-top: 63px;
-    column-gap: 44px;
+    column-gap: 20px;
     row-gap: 32px;
 }
 
@@ -289,7 +325,7 @@ a {
 /* ====SECTION BANNER MAIN==== */
 
 .section--main-background {
-    background-color: var(--twelfth-color);
+    background-color: var(--seventeenth-color);
 }
 
 .container--banner-main {
@@ -349,6 +385,10 @@ a {
 
 
 /* SECTION OUR POPULAR CATEGORIES */
+
+.grid--categories {
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 /* SECTION FOOTER */
