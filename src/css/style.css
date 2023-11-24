@@ -277,7 +277,7 @@ a {
 
 .closebtn {
     color: var(--secondary-color);
-    top: 10px;
+    top: 20px;
     right: 20px;
     font-size: 35px;
     margin-left: 50px;
