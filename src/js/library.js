@@ -9,45 +9,37 @@
      headerNav.classList.remove('active');
  }
 
- //  ====DROP DOWN MENU MOBILE====
+ //  ====DROP-DOWN MENU MOBILE====
+ /* Tạo vòng lặp For có biến chạy i, chạy từ ptu thứ 0 đến hết các ptu có trong lớp "menu__dropdown", để load dl.
+     Tại bất kì ptu thứ i nào trong lớp "menu__dropdown" có sự kiện "click", thì sẽ tạo ra một function: 
+     funtion này, tạo thêm 1 class "active" để thực hiện các thay đổi về style cho class "menu_dropdown" khi đc click vào.
+     Tạo một biến mới có tên là dropdownContent, với hđ lấy phần tử element tiếp theo sau element "menu__dropdown"
+     bằng thuộc tính HTML DOM nextElementSibling (Đó chính là class: "group-menu-dropdown", set none trong css trc). Sau đó thực hiện hđ if - else.
+ */
+ var dropdown = document.getElementsByClassName("menu__dropdown");
+ var i;
 
- //  $(function() {
- //      var Accordion = function(el, multiple) {
- //          this.el = el || {};
- //          this.multiple = multiple || false;
+ for (i = 0; i < dropdown.length; i++) {
+     dropdown[i].addEventListener("click", function() {
+         this.classList.toggle("active-MenuDropdn");
 
- //          var links = this.el.find('.nav__link-menu-mb');
-
- //          links.on('click', {
- //              el: this.el,
- //              multiple: this.multiple
- //          }, this.dropdown)
- //      }
-
- //      Accordion.prototype.dropdown = function(e) {
- //          var $el = e.data.el;
- //          $this = $(this),
- //              $next = $this.next();
-
- //          $next.slideToggle();
- //          $this.parent().toggleClass('open');
-
- //          if (!e.data.multiple) {
- //              $el.find('.menu-drop-down').not($next).slideUp().parent().removeClass('open');
- //          };
- //      }
-
- //      var accordion = new Accordion($('#accordion-menu'), false);
- //  });
+         var dropdownContent = this.nextElementSibling;
+         if (dropdownContent.style.display === "block") {
+             dropdownContent.style.display = "none";
+         } else {
+             dropdownContent.style.display = "block";
+         }
+     });
+ }
 
 
  //  ====SLIDER====
  /* < script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js" > < /script> */
 
- /* initializing swiper slider */
+ /* SLIDER PRODUCT: initializing swiper slider */
  var swiper = new Swiper(".mySwiper", {
-     // Show 4 card trong 1 slide
-     // Có khoảng cách giữa các card là 15px
+     // Show 3 card trong 1 slide
+     // Có khoảng cách giữa các card là 30px
      slidesPerView: 3,
      spaceBetween: 30,
      grabCursor: true,
@@ -71,7 +63,7 @@
          nextEl: ".swiper-button-next",
      },
 
-     // Responsive Card theo kích thước màn hình bằng thuộc tính (breakpoints) 
+     // Responsive Card theo kích thước màn hình bằng thuộc tính (Breakpoints) 
      breakpoints: {
          // Từ 0px: 1 cột
          0: {
@@ -93,10 +85,10 @@
  });
 
 
- /* initializing swiper slider */
+ /* SLIDER TOPBAR: initializing swiper slider */
  var swiper = new Swiper(".mySwiper-topBar", {
-     // Show 4 card trong 1 slide
-     // Có khoảng cách giữa các card là 15px
+     // Show 1 card trong 1 slide
+     // Có khoảng cách giữa các card là 30px
      //  slidesPerView: 1,
      spaceBetween: 30,
      centeredSlides: true,

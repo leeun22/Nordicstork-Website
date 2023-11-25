@@ -91,16 +91,8 @@ a {
     line-height: 28px;
 }
 
-.line-height-xmd {
-    line-height: 23px;
-}
-
 .line-height-md {
     line-height: 22px;
-}
-
-.line-height-xsm {
-    line-height: 21px;
 }
 
 .line-height-sm {
@@ -154,15 +146,15 @@ a {
 
 .button--secondary {
     padding: 1rem 5.9rem;
-    background-color: var(--fourth-color);
+    background-color: var(--sixth-color);
 }
 
 .button--secondary:hover {
-    background-color: #623e96;
+    background-color: #2eaf9f;
 }
 
 .button--third {
-    padding: 13px 50px;
+    padding: 13px 30px;
     background-color: var(--ninth-color);
 }
 
@@ -235,7 +227,7 @@ a {
     column-gap: 0.6rem;
 }
 
-.nav__link-menu:hover {
+.item-hover-color:hover {
     color: var(--main-color);
 }
 
@@ -270,22 +262,47 @@ a {
 }
 
 .nav__list-menu-mb {
-    gap: 48px;
+    gap: 45px;
     list-style: none;
 }
 
+.title-menu-mb {
+    color: #FFF;
+}
+
 .nav__link-menu-mb {
-    font-family: var(--secondary-font);
-    color: var(--main-color);
+    color: #FFF;
     transition: var(--primary-transition);
 }
 
 .closebtn {
     color: var(--secondary-color);
-    top: 0px;
-    right: 20px;
+    top: 20px;
+    right: 18px;
     font-size: 35px;
     margin-left: 50px;
+}
+
+.icon-dropdown-menu {
+    width: 28px;
+}
+
+.nav__link-menu-mb {
+    line-height: 50px;
+}
+
+.list--menu-dropdown {
+    display: none;
+    padding-left: 15px;
+}
+
+.menu__dropdown.active-MenuDropdn .list--menu-dropdown {
+    transition: 0.6s ease;
+}
+
+.menu__dropdown.active-MenuDropdn .icon-dropdown-menu {
+    transform: rotate(180deg);
+    transition: 0.5s ease;
 }
 
 
@@ -347,17 +364,12 @@ a {
 }
 
 .content-banner {
-    line-height: 30px;
+    line-height: 24px;
     padding-block: 34px 55px;
 }
 
 .txt-1 {
     margin-bottom: 30px;
-}
-
-.btn-help-me {
-    line-height: 30px;
-    color: var(--secondary-color);
 }
 
 
@@ -427,10 +439,6 @@ a {
     row-gap: 6px;
 }
 
-.txt-sign-up {
-    line-height: 24px;
-}
-
 .form__sign-up {
     row-gap: 15px;
 }
@@ -471,8 +479,11 @@ a {
 }
 
 .item-content {
-    line-height: 20px;
     row-gap: 20px;
+}
+
+.line-height-subheading {
+    line-height: 20px;
 }
 
 .grid--item-help-information {
@@ -498,7 +509,6 @@ a {
 
 .grid--item-social {
     row-gap: 10px;
-    margin-bottom: 40px;
 }
 
 .item-social {
@@ -534,6 +544,7 @@ a {
 
 .grid__footer-medium {
     column-gap: 5rem;
+    padding-block: 24px 40px;
 }
 
 

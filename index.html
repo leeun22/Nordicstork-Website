@@ -80,61 +80,203 @@
                     <a href="#" class="button button--primary">
                         <img src="./src/images/svg/cart.svg" alt="cart">
                     </a>
-                    <!-- <a href="#" class="button button--primary">
-                        <img src="./src/images/svg/menu.svg" alt="menu">
-                    </a> -->
 
                     <!-- Menu Mobile -->
-                    <div class="item-menu-mb c-pointer">
-                        <button type="button" class="button" onclick="openNav()"> 
-                            <img src="./src/images/svg/menu.svg" alt="menu">
+                    <div class="item-menu-mb">
+                        <!-- When click on the button icon-bar-menu, will take a action in function "openNav()" -->
+                        <button type="button" class="button c-pointer" onclick="openNav()"> 
+                            <img src="./src/images/svg/menu.svg" alt="icon-bar-menu">
                         </button>
 
+                        <!-- The function receives id "mySidenav" to display the menu, pushing the menu to appear from the left -->
                         <div id="mySidenav" class="sidenav tablet-menu-block">
                             <button type="button" class="button closebtn d-none p-absolute b-none" id="btnCloseNav" onclick="closeNav()">&times;</button>
 
-                            <ul id="accordion-menu" class="nav__list-menu-mb d-flex f-direction-col o-hidden heading-primary-regular line-height-md">
-                                <!-- <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Trang chủ</a>
-                                </li> -->
+                            <ul class="nav__list-menu-mb d-flex f-direction-col o-hidden heading-primary-regular line-height-md">
+                                <!-- Items no dropdown menu -->
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Trending</a>
-                                    <!-- <ul class="menu-drop-down">
-                                        <li class="item-menu-drop-down"><a href="#">Item Menu</a></li>
-                                        <li class="item-menu-drop-down"><a href="#">Item Menu</a></li>
-                                        <li class="item-menu-drop-down"><a href="#">Item Menu</a></li>
-                                    </ul> -->
+                                    <h3 class="title-menu-mb">Menu</h3>
                                 </li>
+
+                                <!-- Items have dropdown menu -->
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Shop by age</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Trending</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Gifts</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Shop by age</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Play and learn</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Gifts</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Baby care</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Play and learn</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Eat</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Baby care</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Nursery</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Eat</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">SEN</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Nursery</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav__items-menu-mb">
-                                    <a href="#" class="nav__link-menu-mb d-block">Brands</a>
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">SEN</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
+
+                                <li class="nav__items-menu-mb">
+                                    <div class="menu__dropdown c-pointer d-flex jc-space-between">
+                                        <span class="title-menu-mb">Brands</span>
+                                        <img class="icon-dropdown-menu" src="./src/images/svg/dropdown-menu.svg" alt="icon dropdown">
+                                    </div>
+
+                                    <ul class="list--menu-dropdown">
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                        <li class="item-menu-dropdown">
+                                            <a href="#" class="nav__link-menu-mb d-block">Item Menu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
 
                 </div>
 
+                <!-- Menu Desktop -->
                 <div class="grid--menu d-flex jc-space-between alt-center">
                     <div class="grid--item-search">
                         <form class="form__search d-flex f-wrap jc-space-between alt-center" action="#">
@@ -148,207 +290,207 @@
                     <div class="grid--item-menu d-none-xxs d-block-xl">
                         <ul class="nav__list-menu d-flex o-hidden listStyle-none">
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Trending</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Trending</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                         <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
                                     </svg>
-                                </div>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Shop by age</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular item-hover-color heading-md d-flex alt-center">
+                                    <span class="nav__link-menu">Shop by age</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Gifts</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Gifts</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Play and learn</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Play and learn</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Baby care</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Baby care</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Eat</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Eat</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Nursery</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Nursery</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">SEN</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">SEN</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav__menu-group d-inline-block">
-                                <div class="nav__items-menu d-flex alt-center">
-                                    <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Brands</a>
+                                <a href="#" class="nav__items-menu heading-menu heading-primary-regular heading-md item-hover-color d-flex alt-center">
+                                    <span class="nav__link-menu">Brands</span>
                                     <svg class="icon-dropdown-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
-                                        </svg>
-                                </div>
+                                        <path d="M12 15.3753L6 9.37529L7.075 8.30029L12 13.2503L16.925 8.32529L18 9.40029L12 15.3753Z" fill="#797484"/>
+                                    </svg>
+                                </a>
 
                                 <div class="nav__menu--dropdown d-none p-absolute">
                                     <ul class="nav__list-menu-dropdown listStyle-none d-flex f-direction-col">
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                         <li class="nav__items-menu-dropdown">
-                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md d-block">Item Menu</a>
+                                            <a href="#" class="nav__link-menu heading-menu heading-primary-regular heading-md item-hover-color d-block">Item Menu</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -388,7 +530,7 @@
         </div>
 
         <!-- ====SECTION CATEGORY AGE==== -->
-        <section class="section--secondary section-padding-4-8">
+        <div class="section--secondary section-padding-4-8">
             <div class="container container--small">
                 <div class="t-align-center">
                     <a href="#" class="title heading heading-primary-semiBold heading-xl-desktop heading-xl">Shop by age</a>
@@ -410,7 +552,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
+                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-desktop">
                                 0-6
                             </span>
                             <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
@@ -444,7 +586,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
+                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-desktop">
                                 6-12
                             </span>
                             <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
@@ -478,7 +620,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
+                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-desktop">
                                 1-2
                             </span>
                             <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
@@ -524,7 +666,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
+                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-desktop">
                                 2-3
                             </span>
                             <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
@@ -558,7 +700,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
+                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-desktop">
                                 3-4
                             </span>
                             <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
@@ -603,7 +745,7 @@
                         </a>
 
                         <a href="#" class="item-content title-per-age d-flex f-direction-col t-align-center">
-                            <span class="age-level heading heading-xl heading-primary-semiBold heading-lg-desktop">
+                            <span class="age-level heading heading-lg heading-primary-semiBold heading-lg-desktop">
                                 5+
                             </span>
                             <span class="months heading heading-primary-regular heading-md heading-xlg-desktop">
@@ -613,21 +755,21 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- SECTION BANNER MAIN -->
-        <section class="section--third section--background-third">
+        <div class="section--third section--background-third">
             <div class="container container--small container--banner-main d-flex f-wrap jc-space-between">
                 <div class="grid--content-banner">
                     <h2 class="title-content-banner heading-primary-semiBold heading heading-xl-desktop heading-xl">Gift finder</h2>
 
-                    <div class="content-banner heading heading-primary-regular heading-md heading-xlg-desktop">
+                    <div class="content-banner heading heading-primary-regular heading-md heading-xlg-desktop line-height-xxlg-desktop">
                         <p class="txt-1">When it comes to finding the perfect gift for your loved ones, we've got you covered!</p>
                         <p class="txt-2">Our gift finding tool is so easy-to-use, and if that wasn't enough, we also offer a gift wrapping service.</p>
                     </div>
 
                     <a href="#" class="button button-radius button--secondary d-block mw-max-content">
-                        <span class="heading-primary-semiBold heading-md btn-help-me heading-xlg-desktop">Help me find a gift</span>
+                        <span class="heading heading-primary-semiBold heading-md btn-help-me heading-xlg-desktop line-height-xxlg-desktop">Help me find a gift</span>
                     </a>
                 </div>
 
@@ -635,13 +777,13 @@
                     <img src="./src/images/svg/Navigation-gifts-six.svg" alt="images gift six banner">
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- SECTION CARD SLIDER NEW ARRIVALS -->
         <!-- Leave the JS File at the end  -->
         <div class="section--fourth section-padding-4-8 section--background-primary">
             <div class="title-new-arrivals heading heading-xl-desktop">
-                <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-xl t-align-center">New Arrivals</a>
+                <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-xl heading-xl-desktop t-align-center">New Arrivals</a>
             </div>
 
             <div class="section--margin-32-64 heading">
@@ -735,7 +877,7 @@
         </div>
 
         <!-- SECTION PRODUCT MAIN HAVE BACKGROUND -->
-        <div class="section--fifth section-padding-4-8 section--background-third">
+        <div class="section--fifth section-padding-4-8">
             <div class="container container--small">
                 <div class="grid--product d-flex f-wrap o-hidden">
                     <figure class="grid--item-product d-flex f-direction-col">
@@ -744,7 +886,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Bottle-Cleaning Supplies
                             </a>
                         </figcaption>
@@ -756,7 +898,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Bathtime Supplies
                             </a>
                         </figcaption>
@@ -768,7 +910,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Cicastela Moisture Recovery Cream
                             </a>
                         </figcaption>
@@ -780,7 +922,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Rocking Chair
                             </a>
                         </figcaption>
@@ -792,7 +934,7 @@
         <!-- SECTION CARD SLIDER BEST SELLER-->
         <div class="section--sixth section-padding-4-8 section--background-secondary">
             <div class="heading heading-xl-desktop">
-                <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-xl t-align-center">Bestsellers</a>
+                <a href="#" class="container container--small d-block heading heading-primary-semiBold heading-xl heading-xl-desktop t-align-center">Bestsellers</a>
             </div>
 
             <div class="section--margin-32-64 heading">
@@ -1114,7 +1256,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Making mealtime enjoyable for toddlers
                             </a>
                         </figcaption>
@@ -1126,7 +1268,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Tummy time essentials: what you should know
                             </a>
                         </figcaption>
@@ -1138,7 +1280,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 The benefits of soft toys for babies
                             </a>
                         </figcaption>
@@ -1150,7 +1292,7 @@
                         </a>
 
                         <figcaption class="t-align-center">
-                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-mb">
+                            <a href="#" class="heading heading-primary-regular heading-md line-height-lg txt-decoration heading-xlg-desktop line-height-xxlg-desktop">
                                 Taking baby to the beach? Safety tips and must haves
                             </a>
                         </figcaption>
@@ -1159,7 +1301,7 @@
 
 
                 <div class="d-flex jc-center grid--button">
-                    <a href="#" class="button button--view-all b-radius-pg button--third heading heading-primary-semiBold heading-md t-align-center heading-xlg-desktop">
+                    <a href="#" class="button button--view-all b-radius-pg button--third heading heading-primary-semiBold heading-md t-align-center heading-xlg-desktop line-height-xxlg-desktop">
                         View all of our tips and advice
                     </a>
                 </div>
@@ -1179,32 +1321,32 @@
                             <img class="img-stay-in-know" src="./src/images/footer/Stay-in-know-1.svg" alt="Stay in know">
                         </div>
                         <div class="item-top-primary-content d-flex f-direction-col">
-                            <h2 class="heading heading-primary-semiBold line-height-sm">Stay in the know</h2>
-                            <p class="heading heading-primary-regular heading-md txt-sign-up">Sign up to hear about our latest offers, news and discounts.</p>
+                            <h2 class="heading heading-primary-semiBold heading-xl-mb heading-xl">Stay in the know</h2>
+                            <p class="heading heading-primary-regular heading-md heading-xlg-desktop line-height-lg">Sign up to hear about our latest offers, news and discounts.</p>
                         </div>
                     </div>
 
                     <div class="grid--item-top-secondary">
                         <form class="form__sign-up d-flex f-wrap jc-end-xl" action="#">
                             <input type="email" class="input--email heading-primary-regular heading-md" placeholder="Enter your email address">
-                            <button type="submit" class="button button-radius button--fouth c-pointer heading-primary-semiBold heading-md line-height-xxlg button--submit-email ">Sign up now</button>
+                            <button type="submit" class="button button--submit-email button-radius button--fouth c-pointer heading-primary-semiBold heading-md heading-xlg-desktop line-height-xxlg">Sign up now</button>
                         </form>
                     </div>
                 </div>
 
                 <div class="grid__footer-medium d-grid jc-space-between alt-start">
                     <article class="grid--item-about-us grid--article d-flex f-direction-col">
-                        <h2 class="item-heading heading-primary-semiBold heading-md heading-md">About us</h2>
-                        <div class="item-content d-flex f-wrap f-direction-col heading-primary-regular heading-sm ">
+                        <h2 class="item-heading heading-primary-semiBold heading-md heading-xlg-desktop line-height-xxlg-desktop">About us</h2>
+                        <div class="item-content d-flex f-wrap f-direction-col heading-primary-regular heading-sm line-height-subheading heading-md-desktop">
                             <span>This text area can be used to explain your brand's vision and mission to your customers.</span>
                             <a href="#" class="txt-decoration">Read more</a>
                         </div>
                     </article>
 
                     <article class="grid--item-help-information grid--article d-flex f-wrap f-direction-col">
-                        <h2 class="item-heading heading-primary-semiBold heading-md ">Help and information</h2>
+                        <h2 class="item-heading heading-primary-semiBold heading-md heading-xlg-desktop line-height-xxlg-desktop">Help and information</h2>
                         <nav class="nav__item-content">
-                            <ul class="nav__list-footer listStyle-none heading-primary-regular heading-sm">
+                            <ul class="nav__list-footer listStyle-none heading-primary-regular heading-sm heading-md-desktop line-height-xxlg-desktop">
                                 <li class="nav__item-footer">
                                     <a class="nav__link-footer txt-decoration" href="#">Orders and delivery</a>
                                 </li>
@@ -1231,26 +1373,24 @@
                     </article>
 
                     <article class="grid--item-get-in-touch grid--article d-flex f-wrap f-direction-col heading-primary-regular heading-sm">
-                        <h2 class="item-heading heading-primary-semiBold heading-md">Get in touch</h2>
-                        <p class="item-subheading line-height-sm">We are available online Monday to Friday between 9am-5pm.</p>
+                        <h2 class="item-heading heading-primary-semiBold heading-md heading-xlg-desktop line-height-xxlg-desktop">Get in touch</h2>
+                        <p class="heading-sm line-height-subheading heading-md-desktop">We are available online Monday to Friday between 9am-5pm.</p>
                         <div class="item-contact d-flex f-direction-col">
-                            <div class="contact-group d-flex alt-center">
-                                <a href="#" class="group-icon-contact d-block" title="WatsApp">
-                                    <img src="./src/images/footer/whatsapp.svg" alt="WhatsApp">
-                                </a>
-                                <span class="line-height-xlg">+441273 111445</span>
-                            </div>
-                            <div class="contact-group d-flex alt-center">
-                                <a href="#" class="group-icon-contact d-block" title="Email">
-                                    <img src="./src/images/footer/email.svg" alt="Email">
-                                </a>
-                                <span class="line-height-xlg txt-decoration">hello@nordicstork.com</span>
-                            </div>
+                            <a href="https://wa.me/+441273111445" class="contact-group d-flex alt-center" aria-label="Chat on WhatsApp" title="WhapsApp">
+                                <img src="./src/images/footer/whatsapp.svg" class="group-icon-contact" alt="WhatsApp">
+                                <span class="heading-sm heading-md-desktop line-height-xlg">+441273 111445</span>
+                            </a>
+
+                            <!-- <a href="#" class="contact-group d-flex alt-center" title="Email"> -->
+                            <a href="mailto:your_email@gmail.com" class="contact-group d-flex alt-center" title="Email">
+                                <img src="./src/images/footer/email.svg" class="group-icon-contact" alt="Email">
+                                <span class="heading-sm heading-md-desktop line-height-xlg txt-decoration">hello@nordicstork.com</span>
+                            </a>
                         </div>
                     </article>
 
                     <div class="grid--item-social grid--article d-flex f-wrap f-direction-col">
-                        <h2 class="title-social item-heading heading-primary-semiBold">Social</h2>
+                        <h2 class="item-heading heading-primary-semiBold heading-xlg-desktop line-height-xxlg">Social</h2>
                         <div class="item-social d-flex">
                             <a href="#" class="group-icon-social d-block" title="Instagram">
                                 <img class="icon-social" src="./src/images/footer/instagram-1.svg" alt="Instagram">
@@ -1270,9 +1410,7 @@
         <div class="section--footer-bottom">
             <div class="container container--footer container--footer-bottom">
                 <div class="grid__footer-bottom d-grid jfi-center alt-start-lg jfi-legacy-lg">
-                    <!-- <div class="grid--item-heading"> -->
-                    <p class="item-coppyright t-align-center heading heading-primary-regular heading-sm line-height-sm t-align-start-lg">© 2023 Nordicstork Ltd is a company registered in England & Wales Company Number: 13111688 VAT Number: GB123456789</p>
-                    <!-- </div> -->
+                    <p class="item-coppyright t-align-center heading heading-primary-regular heading-sm line-height-subheading t-align-start-lg">© 2023 Nordicstork Ltd is a company registered in England & Wales Company Number: 13111688 VAT Number: GB123456789</p>
 
                     <div class="grid--item-payment-card d-flex f-wrap alt-center jc-center jc-end-lg">
                         <a href="#" class="item-payment-card d-block">

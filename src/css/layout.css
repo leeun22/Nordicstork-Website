@@ -59,6 +59,12 @@ img {
     .gap-cl-10px {
         column-gap: 20px;
     }
+    .button--secondary {
+        padding: 1.3rem 9rem;
+    }
+    .button--third {
+        padding: 13px 50px;
+    }
 }
 
 @media (min-width:768px) {
@@ -96,8 +102,14 @@ img {
     .section--main {
         margin-block: 40px 42px;
     }
+    .heading-xl-mb {
+        font-size: 20px;
+    }
     .line-height-lg {
         line-height: 24px;
+    }
+    .line-height-xsm {
+        line-height: 21px;
     }
     .grid--group-categories {
         grid-template-columns: repeat(2, 1fr);
@@ -116,13 +128,10 @@ img {
         width: calc(100%/2)
     }
     .grid--item-about-us {
-        padding-block: 24px 30px;
+        margin-bottom: 30px;
     }
     .grid--item-get-in-touch {
         padding-block: 30px 32px;
-    }
-    .title-social {
-        line-height: 30px;
     }
     .container--card-slider {
         padding-inline: inherit;
@@ -181,8 +190,20 @@ img {
     .heading-md-desktop {
         font-size: 1.6rem;
     }
+    .line-height-xxlg-desktop {
+        line-height: 30px;
+    }
+    .line-height-subheading {
+        line-height: 22px;
+    }
+    .section--fifth {
+        background-color: var(--twelfth-color);
+    }
     .button--view-all {
         padding: 10px 50px;
+    }
+    .button--secondary {
+        padding: 1rem 9.7rem;
     }
     .grid--button {
         margin-top: 72px;
@@ -206,9 +227,6 @@ img {
     .name-product {
         line-height: 30px;
     }
-    .price-product {
-        line-height: inherit;
-    }
     .swiper-button-next:after,
     .swiper-button-prev:after {
         display: block;
@@ -218,6 +236,9 @@ img {
     }
     .title-new-arrivals {
         background-color: inherit;
+    }
+    .input--email {
+        line-height: 2.5rem;
     }
     .form__sign-up {
         width: 50%;
@@ -266,9 +287,6 @@ img {
     .grid--item-product {
         row-gap: 20px;
     }
-    .line-height-xxlg-mb {
-        line-height: 30px;
-    }
     .grid--group-categories {
         column-gap: 44px;
     }
@@ -290,12 +308,10 @@ img {
     }
     .button--submit-email {
         padding: 1rem 4.65rem;
-        font-size: 1.9rem;
     }
     .input--email {
         width: 38rem;
         padding: 1rem 0 1rem 1.5rem;
-        line-height: 2.5rem;
     }
     .form__sign-up {
         column-gap: 2rem;
@@ -313,14 +329,22 @@ img {
     .item-contact {
         margin-top: 6px;
     }
-    .item-content {
-        line-height: 22px;
-    }
     .nav__list-footer {
         line-height: 30px;
     }
-    .line-height-sm {
-        line-height: 20px;
+    .button--secondary {
+        padding: 1rem 5.9rem;
+        background-color: var(--fourth-color);
+    }
+    .button--secondary:hover {
+        background-color: #623e96;
+    }
+    .btn-help-me {
+        line-height: 30px;
+        color: var(--secondary-color);
+    }
+    .container--footer-bottom {
+        padding-block: 20px 46px;
     }
 }
 
@@ -345,7 +369,7 @@ img {
         z-index: 1;
         top: 0;
         left: 0;
-        padding: 30px 0 20px 040px;
+        padding: 30px 15px 20px 15px;
         text-align: left;
         transition: 0.6s ease;
         transform: translateX(-100%);
@@ -354,15 +378,9 @@ img {
     .sidenav.active {
         transform: translateX(0);
     }
-    /* .nav__list-menu-mb {
-        flex-direction: column;
-    } */
     .closebtn {
         display: block;
         background: none;
-    }
-    .nav__link-menu-mb {
-        color: #FFF;
     }
 }
 
