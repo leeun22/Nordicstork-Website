@@ -117,10 +117,6 @@ img {
     .img-item-third {
         max-width: 155px;
     }
-    /* Chia các item, mỗi 1 row có 2 column với độ rộng = nhau */
-    .grid--5-item .grid--item {
-        width: calc(100%/2)
-    }
     .grid--item-about-us {
         margin-bottom: 30px;
     }
@@ -262,6 +258,7 @@ img {
         column-gap: 10px;
         grid-template-columns: repeat(6, 1fr);
     }
+    /* ***** */
     .grid--item-product {
         flex: 1 0 235px;
     }
