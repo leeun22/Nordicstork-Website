@@ -2,7 +2,7 @@
 
 
 /* ====FLEXBOX CONTAINER==== 
-   ====DISPLAY==== */
+   =======DISPLAY==== */
 
 .d-block {
     display: block;
@@ -113,7 +113,7 @@
 
 
 /* ====FLEXBOX ITEM==== 
-   ====ALIGN-SELF==== */
+   ======ALIGN-SELF==== */
 
 .als-start {
     align-self: self-start;
@@ -128,7 +128,7 @@
 }
 
 
-/* ====GRID==== 
+/* =======GRID==== 
    ===JUSTIFY-ITEM===*/
 
 .jfi-start {
@@ -235,7 +235,7 @@
 }
 
 
-/* ====BACKGROUND-IMAGES==== 
+/* =====BACKGROUND-IMAGES==== 
    ====For Container Parent===*/
 
 .bg-images {
@@ -249,7 +249,7 @@
 }
 
 
-/* ====OBJECT-FIT==== 
+/* =====OBJECT-FIT==== 
    ===For Item Children===*/
 
 .obj-fill {
@@ -281,11 +281,11 @@
 }
 
 
-/* ====RESPONSIVE MOBILE==== 
+/* ======RESPONSIVE MOBILE==== 
    =====Bootstrap Breakpoints=====*/
 
 
-/* ====breakpoint from 0==== */
+/* ====Breakpoint from 0==== */
 
 @media (min-width:0) {
     .d-none-xxs {
@@ -294,7 +294,7 @@
 }
 
 
-/* ====breakpoint extra small==== */
+/* ====Breakpoint extra small==== */
 
 @media (max-width:576px) {
     .d-none-xs {
@@ -303,7 +303,7 @@
 }
 
 
-/* ====breakpoint small==== */
+/* ====Breakpoint small==== */
 
 @media (min-width:576px) {
     .d-none-sm {
@@ -312,7 +312,7 @@
 }
 
 
-/* ====breakpoint medium==== */
+/* ====Breakpoint medium==== */
 
 @media (min-width:768px) {
     .d-none-md {
@@ -321,7 +321,7 @@
 }
 
 
-/* ====breakpoint large==== */
+/* ====Breakpoint large==== */
 
 @media (min-width:992px) {
     .alt-start-lg {
@@ -339,7 +339,7 @@
 }
 
 
-/* ====breakpoint extra large==== */
+/* ====Breakpoint extra large==== */
 
 @media (min-width:1200px) {
     .d-none-xl {
@@ -369,77 +369,10 @@
 }
 
 
-/* ====breakpoint extra extra large==== */
+/* ====Breakpoint extra extra large==== */
 
 @media (min-width:1440px) {
     .d-none-xxl {
-        display: none;
-    }
-}
-
-
-/* ====RESPONSIVE DESKTOP==== 
-   =====Breakpoints=====*/
-
-
-/* ====breakpoint extra small==== */
-
-@media (max-width:414px) {
-    .d-none.xs-desktop {
-        display: none;
-    }
-}
-
-
-/* ====breakpoint small==== */
-
-@media (max-width:576px) {
-    .d-none.sm-desktop {
-        display: none;
-    }
-}
-
-
-/* ====breakpoint medium==== */
-
-@media (max-width:768px) {
-    .d-none-md-desktop {
-        display: none;
-    }
-}
-
-
-/* ====breakpoint large==== */
-
-@media (max-width:992px) {
-    .d-none-lg-desktop {
-        display: none;
-    }
-}
-
-
-/* ====breakpoint extra large==== */
-
-@media (max-width:1200px) {
-    .d-none-xl-desktop {
-        display: none;
-    }
-}
-
-
-/* ====breakpoint extra extra large==== */
-
-@media (max-width:1440px) {
-    .d-none-xxl-desktop {
-        display: none;
-    }
-}
-
-
-/* ====breakpoint extra extra extra large==== */
-
-@media (min-width:1440px) {
-    .d-none-xxxl-desktop {
         display: none;
     }
 }
